@@ -248,26 +248,36 @@ export function normalizeConfig(raw) {
     if (names.has(name)) { errs.push(`${tag}: ชื่อ "${name}" ซ้ำกับรายการอื่น`); return; }
     names.add(name);
     const enabled = s.enabled !== false;
+    const type = s.type === undefined ? "trend" : String(s.type).toLowerCase();
+    if (!["trend", "rsi"].includes(type)) errs.push(`${tag} "${name}": type ต้องเป็น "trend" (ATR+HAMA) หรือ "rsi" (ตอนนี้: ${s.type})`);
+    const isRsi = type === "rsi";
     const exchange = String(s.exchange || "bitget").toLowerCase();
     if (!EX[exchange]) errs.push(`${tag} "${name}": exchange ต้องเป็น ${Object.keys(EX).join(" / ")} (ตอนนี้: ${s.exchange})`);
     let sides = s.sides === "both" ? ["long", "short"] : toList(s.sides === undefined ? ["long", "short"] : s.sides).map(x => String(x).toLowerCase());
-    if (!sides.length || sides.some(x => !["long", "short"].includes(x))) errs.push(`${tag} "${name}": sides ต้องเป็น "long" และ/หรือ "short"`);
-    sides = [...new Set(sides)];
+    if (!isRsi && (!sides.length || sides.some(x => !["long", "short"].includes(x)))) errs.push(`${tag} "${name}": sides ต้องเป็น "long" และ/หรือ "short"`);
+    sides = isRsi ? [] : [...new Set(sides)];
     let tfs = toList(s.tfs === undefined ? ["1h"] : s.tfs).map(x => String(x).toLowerCase());
     if (!tfs.length || tfs.some(x => !TFS[x])) errs.push(`${tag} "${name}": tfs ต้องเป็น "1h", "4h", "1d" (เลือกได้หลายอัน)`);
     tfs = [...new Set(tfs)].filter(x => TFS[x]).sort((a, b) => TFS[a].hours - TFS[b].hours);
     const coins = parseCoins(Array.isArray(s.coins) ? s.coins.join(" ") : s.coins);
     if (enabled && !coins.length) errs.push(`${tag} "${name}": ยังไม่ได้ใส่รายชื่อเหรียญใน "coins"`);
     const hamaMinStep = s.hama_min_step === undefined ? 3 : Number(s.hama_min_step);
-    if (!(hamaMinStep >= 1 && hamaMinStep <= 5)) errs.push(`${tag} "${name}": hama_min_step ต้องอยู่ระหว่าง 1–5`);
+    if (!isRsi && !(hamaMinStep >= 1 && hamaMinStep <= 5)) errs.push(`${tag} "${name}": hama_min_step ต้องอยู่ระหว่าง 1–5`);
     const minVolume = s.min_volume === undefined ? 0 : Number(s.min_volume);
     const minRange = s.min_range === undefined ? 0 : Number(s.min_range);
     const maxCoins = s.max_coins === undefined ? 200 : Number(s.max_coins);
     if (!(minVolume >= 0)) errs.push(`${tag} "${name}": min_volume ต้องเป็นตัวเลข ≥ 0`);
     if (!(minRange >= 0)) errs.push(`${tag} "${name}": min_range ต้องเป็นตัวเลข ≥ 0`);
     if (!(maxCoins >= 1)) errs.push(`${tag} "${name}": max_coins ต้องเป็นตัวเลข ≥ 1`);
-    cfg.scans.push({ name, enabled, exchange, sides, tfs, coins, hamaMinStep, minVolume, minRange, maxCoins,
-                     excludeStocks: s.exclude_tokenized_stocks === true });
+    const rsiLength = s.rsi_length === undefined ? 14 : Number(s.rsi_length);
+    const overbought = s.overbought === undefined ? 70 : Number(s.overbought);
+    const oversold = s.oversold === undefined ? 30 : Number(s.oversold);
+    if (isRsi) {
+      if (!(Number.isInteger(rsiLength) && rsiLength >= 2 && rsiLength <= 100)) errs.push(`${tag} "${name}": rsi_length ต้องเป็นจำนวนเต็ม 2–100`);
+      if (!(oversold > 0 && oversold < overbought && overbought < 100)) errs.push(`${tag} "${name}": ต้องมี 0 < oversold < overbought < 100 (ตอนนี้: ${s.oversold}/${s.overbought})`);
+    }
+    cfg.scans.push({ name, type, enabled, exchange, sides, tfs, coins, hamaMinStep, minVolume, minRange, maxCoins,
+                     rsiLength, overbought, oversold, excludeStocks: s.exclude_tokenized_stocks === true });
   });
   if (errs.length) throw new Error(errs.join("\n"));
   return cfg;
@@ -280,7 +290,7 @@ export function lastClosedIndex(cs, hours, nowMs) {
   for (let i = cs.length - 1; i >= 0; i--) if (cs[i].t + ms <= nowMs) return i;
   return -1;
 }
-export async function scanOne(scan, now = Date.now()) {
+async function prepareList(scan) {
   const ex = EX[scan.exchange];
   const tickers = await ex.tickers();
   const byBase = new Map(tickers.map(x => [x.base, x]));
@@ -296,7 +306,11 @@ export async function scanOne(scan, now = Date.now()) {
   const list = keep.slice(0, scan.maxCoins);
   keep.slice(scan.maxCoins).forEach(x => dropped.push(`${x.base} (เกินจำนวนสูงสุด)`));
   if (!list.length) throw new Error(`ไม่มีเหรียญเหลือให้สแกน (ไม่พบใน ${scan.exchange}: ${missing.join(", ") || "-"} · ถูกตัวกรองตัด: ${dropped.join(", ") || "-"})`);
-
+  return { ex, list, missing, dropped };
+}
+export async function scanOne(scan, now = Date.now()) {
+  if (scan.type === "rsi") return scanRsi(scan, now);
+  const { ex, list, missing, dropped } = await prepareList(scan);
   const out = { long: [], short: [] }, flat = [], failed = [], failedBases = [];
   let idx = 0, lastErr = "";
   async function worker() {
@@ -336,6 +350,96 @@ export async function scanOne(scan, now = Date.now()) {
     throw new Error(`ดึงข้อมูลแท่งเทียนจาก ${scan.exchange} ไม่สำเร็จ ${failed.length}/${list.length} ตัว (ล่าสุด: ${lastErr || "ข้อมูลไม่พอ"})`);
   for (const side of scan.sides) out[side].sort((a, b) => a.dist - b.dist);
   return { out, flat, failed, failedBases, missing, dropped, total: list.length };
+}
+
+// ---- RSI (Wilder / ta.rsi ของ TradingView: ใช้ RMA ของส่วนต่างราคาปิด เริ่มจากค่าเฉลี่ยธรรมดา n ค่าแรก) ----
+export function rsiArr(c, n) {
+  const out = new Array(c.length).fill(NaN);
+  if (c.length <= n) return out;
+  let up = 0, dn = 0;
+  for (let i = 1; i <= n; i++) { const d = c[i] - c[i - 1]; up += Math.max(d, 0); dn += Math.max(-d, 0); }
+  up /= n; dn /= n;
+  const val = () => dn === 0 ? (up === 0 ? 50 : 100) : 100 - 100 / (1 + up / dn);
+  out[n] = val();
+  for (let i = n + 1; i < c.length; i++) {
+    const d = c[i] - c[i - 1];
+    up = (up * (n - 1) + Math.max(d, 0)) / n;
+    dn = (dn * (n - 1) + Math.max(-d, 0)) / n;
+    out[i] = val();
+  }
+  return out;
+}
+export async function scanRsi(scan, now = Date.now()) {
+  const { ex, list, missing, dropped } = await prepareList(scan);
+  const out = { ob: {}, os: {} };
+  for (const tf of scan.tfs) { out.ob[tf] = []; out.os[tf] = []; }
+  const failed = [], failedKeys = [];                   // failedKeys = "BASE|tf" เพื่อคงสถานะเดิมของ TF ที่ดึงไม่ได้
+  const failedCoins = new Set();
+  let idx = 0, lastErr = "";
+  async function worker() {
+    for (;;) {
+      const my = idx++;
+      if (my >= list.length) return;
+      const it = list[my];
+      for (const tf of scan.tfs) {
+        try {
+          const cs = (await ex.candles(it.id, tf)).filter(x => !Number.isNaN(x.c));
+          const at = lastClosedIndex(cs, TFS[tf].hours, now);
+          if (at < scan.rsiLength * 4) { failedKeys.push(`${it.base}|${tf}`); if (!failedCoins.has(it.base)) failed.push(`${it.base}(ข้อมูล ${tf} ไม่พอ)`); failedCoins.add(it.base); continue; }
+          const v = rsiArr(cs.slice(0, at + 1).map(x => x.c), scan.rsiLength)[at];
+          if (Number.isNaN(v)) { failedKeys.push(`${it.base}|${tf}`); continue; }
+          const row = { base: it.base, tf, rsi: v, close: cs[at].c, tv: ex.tvPrefix + ":" + ex.tv(it.id), tvInterval: TFS[tf].tv };
+          if (v >= scan.overbought) out.ob[tf].push(row);
+          else if (v <= scan.oversold) out.os[tf].push(row);
+        } catch (e) { failedKeys.push(`${it.base}|${tf}`); if (!failedCoins.has(it.base)) failed.push(it.base); failedCoins.add(it.base); lastErr = String(e && e.message || e); }
+      }
+      await sleep(40);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(ex.conc, list.length) }, worker));
+  if (list.length >= 3 && failedCoins.size >= list.length / 2)
+    throw new Error(`ดึงข้อมูลแท่งเทียนจาก ${scan.exchange} ไม่สำเร็จ ${failedCoins.size}/${list.length} ตัว (ล่าสุด: ${lastErr || "ข้อมูลไม่พอ"})`);
+  for (const tf of scan.tfs) { out.ob[tf].sort((a, b) => b.rsi - a.rsi); out.os[tf].sort((a, b) => a.rsi - b.rsi); }
+  return { out, flat: [], failed, failedKeys, missing, dropped, total: list.length };
+}
+export function diffAndFormatRsi(scan, res, prev, cfg, opts = {}) {
+  const showAll = cfg.notify === "all" || !!opts.forceAll;
+  const next = { ob: {}, os: {} };
+  const blocks = [];
+  const zones = [["ob", "🔥", `OVERBOUGHT (RSI ≥ ${scan.overbought})`], ["os", "🧊", `OVERSOLD (RSI ≤ ${scan.oversold})`]];
+  for (const [z, icon, title] of zones) {
+    const lines = [];
+    for (const tf of scan.tfs) {
+      const rows = res.out[z][tf];
+      const before = new Set((prev && prev[z] && prev[z][tf]) || []);
+      const fresh = rows.filter(r => !before.has(r.base));
+      const keepPrev = [...before].filter(b => (res.failedKeys || []).includes(`${b}|${tf}`));   // TF ที่ดึงไม่ได้รอบนี้ คงสถานะเดิม
+      next[z][tf] = [...new Set([...rows.map(r => r.base), ...keepPrev])].sort();
+      const shown = showAll ? rows : fresh;
+      if (!shown.length) continue;
+      const freshSet = new Set(fresh.map(r => r.base));
+      lines.push(`<b>${tf.toUpperCase()}</b> — ใหม่ ${fresh.length} · อยู่ในโซน ${rows.length}`);
+      for (const r of shown) {
+        const url = `https://www.tradingview.com/chart/?symbol=${encodeURIComponent(r.tv)}&interval=${r.tvInterval}`;
+        lines.push(`${freshSet.has(r.base) ? "🆕" : "▫️"} <a href="${h(url)}">${h(r.base)}/USDT</a>  RSI ${r.rsi.toFixed(1)} · ราคา ${fmtPrice(r.close)}`);
+      }
+      if (!showAll) {
+        const still = rows.filter(r => !freshSet.has(r.base)).map(r => r.base);
+        if (still.length) lines.push(`<i>ยังอยู่ในโซน: ${h(still.join(", "))}</i>`);
+      }
+    }
+    if (lines.length) blocks.push(`${icon} <b>${title}</b>\n` + lines.join("\n"));
+  }
+  let text = null;
+  if (blocks.length) {
+    const head = `📊 <b>${h(scan.name)}</b>\n${scan.exchange.toUpperCase()} · RSI(${scan.rsiLength}) · ${fmtTime(opts.now ?? Date.now(), cfg.timezone)}`;
+    const foot = [];
+    if (res.missing.length) foot.push(`ไม่พบคู่ USDT: ${res.missing.join(", ")}`);
+    if (res.dropped.length) foot.push(`ถูกตัวกรองตัด: ${res.dropped.join(", ")}`);
+    if (res.failed.length) foot.push(`ดึงข้อมูลไม่ได้: ${res.failed.join(", ")}`);
+    text = [head, ...blocks, ...(foot.length ? [`<i>${h(foot.join(" · "))}</i>`] : [])].join("\n\n");
+  }
+  return { text, next };
 }
 
 // ---- เทียบกับรอบก่อน + สร้างข้อความ ----
@@ -475,11 +579,14 @@ export async function main(env = process.env) {
       state.scans[scan.name] = { ...prev, error: msg };
       continue;
     }
-    const { text, next } = diffAndFormat(scan, res, prev, cfg, { now, forceAll: env.FORCE_ALL === "1" });
+    const { text, next } = (scan.type === "rsi" ? diffAndFormatRsi : diffAndFormat)(scan, res, prev, cfg, { now, forceAll: env.FORCE_ALL === "1" });
     let ok = true;
     if (prev.error) ok = await send(`✅ <b>${h(scan.name)}</b> กลับมาสแกนได้ปกติแล้ว`);
     if (ok && text) ok = await send(text);
-    for (const side of scan.sides)
+    if (scan.type === "rsi") for (const z of ["ob", "os"]) for (const tf of scan.tfs)
+      console.log(`[${scan.name}] RSI ${z === "ob" ? "OB" : "OS"} ${tf}: ${res.out[z][tf].map(r => r.base + " " + r.rsi.toFixed(1)).join(", ") || "-"} · ตรวจ ${res.total} ตัว`
+        + (res.failed.length ? ` · ดึงไม่ได้ ${res.failed.join(", ")}` : ""));
+    else for (const side of scan.sides)
       console.log(`[${scan.name}] ${side}: ${res.out[side].length} เหรียญ (${res.out[side].map(r => r.base).join(", ") || "-"}) · ตรวจ ${res.total} ตัว`
         + (res.failed.length ? ` · ดึงไม่ได้ ${res.failed.join(", ")}` : ""));
     if (!ok) { console.error(`[${scan.name}] ส่ง Telegram ไม่สำเร็จ จะลองใหม่รอบหน้า`); code = 1; state.scans[scan.name] = { ...prev }; continue; }
