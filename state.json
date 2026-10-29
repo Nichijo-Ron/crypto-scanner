@@ -12,16 +12,16 @@
         "HYPE",
         "LINK",
         "ONDO",
-        "SOL",
         "SUI",
         "TAO",
         "TRX",
         "UNI",
-        "VIRTUAL",
-        "WLD",
         "ZEC"
       ],
-      "short": []
+      "short": [
+        "BNB",
+        "XRP"
+      ]
     }
   }
 }
