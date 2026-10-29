@@ -2,20 +2,16 @@
   "version": 1,
   "scans": {
     "เหรียญหลัก 1h": {
-      "long": [
-        "BTC",
-        "DOGE",
-        "ENA",
-        "HYPE",
-        "LINK",
-        "TRX",
-        "UNI",
-        "ZEC"
-      ],
+      "long": [],
       "short": [
-        "BNB",
+        "BTC",
+        "ETH",
+        "ONDO",
         "SOL",
-        "XRP"
+        "WLD",
+        "WLFI",
+        "XRP",
+        "ZEC"
       ]
     }
   }
