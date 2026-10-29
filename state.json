@@ -2,12 +2,24 @@
   "version": 1,
   "scans": {
     "เหรียญหลัก 1h": {
-      "long": [],
+      "long": [
+        "HYPE"
+      ],
       "short": [
+        "ADA",
+        "AVAX",
+        "BNB",
         "BTC",
+        "DOGE",
+        "ENA",
         "ETH",
+        "LINK",
         "ONDO",
         "SOL",
+        "SUI",
+        "TAO",
+        "UNI",
+        "VIRTUAL",
         "WLD",
         "WLFI",
         "XRP",
