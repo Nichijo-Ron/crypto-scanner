@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "scans": {
+    "เหรียญหลัก 1h": {
+      "long": [],
+      "short": [
+        "ADA",
+        "AVAX",
+        "BTC",
+        "DOGE",
+        "DOT",
+        "ETH",
+        "LINK",
+        "SOL",
+        "XRP"
+      ]
+    }
+  }
+}
