@@ -18,12 +18,10 @@
         "TRX",
         "UNI",
         "VIRTUAL",
+        "WLD",
         "ZEC"
       ],
-      "short": [
-        "WLFI",
-        "XRP"
-      ]
+      "short": []
     }
   }
 }
