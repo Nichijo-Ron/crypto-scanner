@@ -25,6 +25,29 @@
         "XRP",
         "ZEC"
       ]
+    },
+    "RSI OB/OS": {
+      "ob": {
+        "1h": [],
+        "4h": [
+          "HYPE"
+        ],
+        "1d": []
+      },
+      "os": {
+        "1h": [
+          "BNB",
+          "ENA",
+          "LINK",
+          "ONDO",
+          "TAO",
+          "UNI",
+          "VIRTUAL",
+          "WLD"
+        ],
+        "4h": [],
+        "1d": []
+      }
     }
   }
 }
