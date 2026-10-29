@@ -14,7 +14,20 @@
   ],
   "timezone": "Asia/Bangkok",
   "notify": "new",
-  "scans": [
+  "scans": [    {
+      "name": "RSI OB/OS",
+      "type": "rsi",
+      "enabled": true,
+      "exchange": "bitget",
+      "tfs": ["1h", "4h", "1d"],
+      "coins": "BTC ETH XRP SOL LINK SUI TRX UNI WLD ZEC WLFI VIRTUAL ENA BNB TAO AVAX ONDO HYPE ADA DOGE",
+      "rsi_length": 14,
+      "overbought": 70,
+      "oversold": 30,
+      "min_volume": 0,
+      "exclude_tokenized_stocks": false,
+      "max_coins": 200
+    },
     {
       "name": "เหรียญหลัก 1h",
       "enabled": true,
