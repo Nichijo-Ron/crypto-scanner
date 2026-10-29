@@ -1,0 +1,45 @@
+{
+  "_help": [
+    "แก้ไฟล์นี้เพื่อเลือกว่าจะให้สแกนอะไร (กดไอคอนดินสอบน GitHub แล้ว Commit changes) รอบสแกนถัดไปจะใช้ค่าใหม่ทันที",
+    "scans = รายการชุดสแกน เพิ่มได้หลายชุด เช่น ชุด 1h ฝั่ง Long+Short และอีกชุด 4h+1d ฝั่ง Long อย่างเดียว",
+    "name = ชื่อชุด (ห้ามซ้ำกัน) · enabled = true เปิด / false ปิดชั่วคราว",
+    "exchange = binance | bybit | okx | bitget",
+    "sides = [\"long\"] หรือ [\"short\"] หรือ [\"long\", \"short\"] (สแกนสองฝั่งพร้อมกัน)",
+    "tfs = [\"1h\"], [\"4h\"], [\"1d\"] หรือหลายอัน เช่น [\"1h\", \"4h\"] (ถ้าหลายอัน เหรียญต้องเข้าเงื่อนไขครบทุก TF)",
+    "coins = รายชื่อเหรียญ คั่นด้วยเว้นวรรคหรือคอมมา เช่น \"BTC ETH SOL\"",
+    "hama_min_step = ความเขียว/แดงเข้มของ HAMA ขั้นต่ำ 1-5 (ค่าเริ่มต้น 3)",
+    "min_volume = วอลุ่ม 24 ชม. ขั้นต่ำเป็น USDT (0 = ไม่กรอง) · min_range = ช่วงราคาเฉลี่ย/แท่งขั้นต่ำ % ที่ 1h (0 = ไม่กรอง)",
+    "exclude_tokenized_stocks = true เพื่อตัดหุ้น/ETF โทเคนที่ชื่อขึ้นต้นด้วย R · max_coins = จำนวนเหรียญสูงสุดต่อชุด",
+    "notify = \"new\" แจ้งเฉพาะเหรียญที่เพิ่งเข้าเงื่อนไข (แนะนำ) หรือ \"all\" แจ้งรายการทั้งหมดทุกรอบที่มีเหรียญ"
+  ],
+  "timezone": "Asia/Bangkok",
+  "notify": "new",
+  "scans": [
+    {
+      "name": "เหรียญหลัก 1h",
+      "enabled": true,
+      "exchange": "bitget",
+      "sides": ["long", "short"],
+      "tfs": ["1h"],
+      "coins": "BTC ETH SOL BNB XRP DOGE ADA AVAX LINK DOT",
+      "hama_min_step": 3,
+      "min_volume": 0,
+      "min_range": 0,
+      "exclude_tokenized_stocks": false,
+      "max_coins": 200
+    },
+    {
+      "name": "AI 4h+1D (ตัวอย่าง ปิดอยู่)",
+      "enabled": false,
+      "exchange": "bitget",
+      "sides": ["long"],
+      "tfs": ["4h", "1d"],
+      "coins": "FET RENDER TAO WLD NEAR GRT",
+      "hama_min_step": 3,
+      "min_volume": 0,
+      "min_range": 0,
+      "exclude_tokenized_stocks": false,
+      "max_coins": 200
+    }
+  ]
+}
