@@ -36,18 +36,9 @@
       },
       "os": {
         "1h": [
-          "ADA",
-          "AVAX",
-          "BTC",
-          "DOGE",
           "ETH",
-          "LINK",
           "ONDO",
-          "SOL",
-          "SUI",
           "TAO",
-          "VIRTUAL",
-          "WLD",
           "XRP"
         ],
         "4h": [
