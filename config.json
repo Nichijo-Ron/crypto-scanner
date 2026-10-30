@@ -13,7 +13,7 @@
     "notify = \"new\" แจ้งเฉพาะเหรียญที่เพิ่งเข้าเงื่อนไข (แนะนำ) หรือ \"all\" แจ้งรายการทั้งหมดทุกรอบที่มีเหรียญ"
   ],
   "timezone": "Asia/Bangkok",
-  "notify": "all",
+  "notify": "new",
   "scans": [    {
       "name": "RSI OB/OS",
       "type": "rsi",
