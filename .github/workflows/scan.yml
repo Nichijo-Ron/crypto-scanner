@@ -1,7 +1,6 @@
 name: scan
 
 on:
-  schedule:
   workflow_dispatch:
     inputs:
       send_test:
@@ -13,7 +12,6 @@ on:
         type: boolean
         default: false
 
-# ต้องมีสิทธิ์เขียน เพื่อบันทึกไฟล์ state.json (ใช้จำว่าแจ้งเหรียญอะไรไปแล้ว)
 permissions:
   contents: write
 
@@ -45,7 +43,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # กัน GitHub ปิดงานตั้งเวลาอัตโนมัติหลังไม่มีกิจกรรม 60 วัน: ถ้า commit ล่าสุดเก่ากว่า 40 วัน ให้บันทึกไฟล์เล็กๆ 1 ครั้ง
           last=$(git log -1 --format=%ct)
           if [ $(( $(date +%s) - last )) -gt 3456000 ]; then
             date -u +"%Y-%m-%dT%H:%MZ" > .keepalive
