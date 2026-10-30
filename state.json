@@ -19,9 +19,7 @@
         "UNI",
         "VIRTUAL",
         "WLD",
-        "WLFI",
-        "XRP",
-        "ZEC"
+        "XRP"
       ]
     },
     "RSI OB/OS": {
@@ -35,16 +33,8 @@
         ]
       },
       "os": {
-        "1h": [
-          "ETH",
-          "ONDO",
-          "TAO",
-          "XRP"
-        ],
-        "4h": [
-          "BNB",
-          "WLD"
-        ],
+        "1h": [],
+        "4h": [],
         "1d": [
           "ADA",
           "AVAX",
