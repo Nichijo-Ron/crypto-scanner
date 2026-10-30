@@ -19,15 +19,15 @@
         "UNI",
         "VIRTUAL",
         "WLD",
-        "WLFI"
+        "WLFI",
+        "XRP",
+        "ZEC"
       ]
     },
     "RSI OB/OS": {
       "ob": {
         "1h": [],
-        "4h": [
-          "TRX"
-        ],
+        "4h": [],
         "1d": [
           "TRX"
         ]
