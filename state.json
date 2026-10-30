@@ -2,7 +2,9 @@
   "version": 1,
   "scans": {
     "เหรียญหลัก 1h": {
-      "long": [],
+      "long": [
+        "ONDO"
+      ],
       "short": [
         "ADA",
         "AVAX",
@@ -11,7 +13,6 @@
         "DOGE",
         "ENA",
         "ETH",
-        "LINK",
         "SOL",
         "SUI",
         "TAO",
