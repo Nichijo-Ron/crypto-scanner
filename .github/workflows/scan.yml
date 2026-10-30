@@ -2,7 +2,6 @@ name: scan
 
 on:
   schedule:
-  
   workflow_dispatch:
     inputs:
       send_test:
