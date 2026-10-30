@@ -2,8 +2,7 @@ name: scan
 
 on:
   schedule:
-    # รันทุกชั่วโมงที่นาทีที่ 5 (เวลา UTC) หลังแท่ง 1h ปิดแล้ว · GitHub อาจเริ่มช้ากว่านี้ได้บ้างเมื่อระบบโหลดสูง
-    - cron: "5 * * * *"
+  
   workflow_dispatch:
     inputs:
       send_test:
