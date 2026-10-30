@@ -2,9 +2,7 @@
   "version": 1,
   "scans": {
     "เหรียญหลัก 1h": {
-      "long": [
-        "HYPE"
-      ],
+      "long": [],
       "short": [
         "ADA",
         "AVAX",
@@ -30,23 +28,37 @@
       "ob": {
         "1h": [],
         "4h": [
-          "HYPE"
+          "TRX"
         ],
-        "1d": []
+        "1d": [
+          "TRX"
+        ]
       },
       "os": {
         "1h": [
+          "ADA",
+          "AVAX",
           "BNB",
+          "BTC",
           "ENA",
           "LINK",
           "ONDO",
+          "SOL",
           "TAO",
           "UNI",
           "VIRTUAL",
+          "WLD",
+          "XRP"
+        ],
+        "4h": [
+          "BNB",
           "WLD"
         ],
-        "4h": [],
-        "1d": []
+        "1d": [
+          "ADA",
+          "AVAX",
+          "SOL"
+        ]
       }
     }
   }
