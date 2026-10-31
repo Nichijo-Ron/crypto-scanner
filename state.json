@@ -3,39 +3,33 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "long": [
-        "ONDO"
+        "LINK",
+        "ONDO",
+        "UNI"
       ],
       "short": [
-        "ADA",
-        "AVAX",
         "BNB",
         "BTC",
         "DOGE",
         "ENA",
         "ETH",
         "SOL",
-        "TAO",
         "TRX",
         "WLFI",
-        "XRP",
-        "ZEC"
+        "XRP"
       ]
     },
     "RSI OB/OS": {
       "ob": {
         "1h": [],
         "4h": [],
-        "1d": [
-          "TRX"
-        ]
+        "1d": []
       },
       "os": {
         "1h": [],
         "4h": [],
         "1d": [
-          "ADA",
-          "AVAX",
-          "SOL"
+          "WLFI"
         ]
       }
     }
