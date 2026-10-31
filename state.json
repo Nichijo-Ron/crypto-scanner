@@ -9,11 +9,9 @@
           "ZEC"
         ],
         "short": [
-          "ADA",
           "BNB",
           "BTC",
           "DOGE",
-          "ENA",
           "ETH",
           "TAO",
           "WLD",
@@ -27,6 +25,8 @@
         "VIRTUAL"
       ],
       "short": [
+        "ADA",
+        "ENA",
         "HYPE",
         "SOL",
         "TRX",
@@ -35,7 +35,9 @@
     },
     "RSI OB/OS": {
       "ob": {
-        "1h": [],
+        "1h": [
+          "LINK"
+        ],
         "4h": [],
         "1d": []
       },
