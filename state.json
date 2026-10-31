@@ -15,13 +15,14 @@
         "ETH",
         "SOL",
         "TRX",
-        "WLFI",
-        "XRP"
+        "WLFI"
       ]
     },
     "RSI OB/OS": {
       "ob": {
-        "1h": [],
+        "1h": [
+          "ONDO"
+        ],
         "4h": [],
         "1d": []
       },
