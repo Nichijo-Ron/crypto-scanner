@@ -5,14 +5,12 @@
       "near": {
         "long": [
           "AVAX",
-          "SUI",
-          "ZEC"
+          "ETH",
+          "SUI"
         ],
         "short": [
-          "ADA",
           "BTC",
           "DOGE",
-          "ETH",
           "TAO",
           "WLD",
           "XRP"
@@ -25,12 +23,14 @@
         "VIRTUAL"
       ],
       "short": [
+        "ADA",
         "BNB",
         "ENA",
         "HYPE",
         "SOL",
         "TRX",
-        "WLFI"
+        "WLFI",
+        "ZEC"
       ]
     },
     "RSI OB/OS": {
