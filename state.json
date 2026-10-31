@@ -4,20 +4,22 @@
     "เหรียญหลัก 1h": {
       "long": [
         "LINK",
-        "ONDO",
-        "UNI"
+        "ONDO"
       ],
       "short": [
         "ADA",
+        "AVAX",
         "BNB",
         "BTC",
         "DOGE",
         "ETH",
         "SOL",
+        "SUI",
         "TAO",
         "TRX",
         "WLFI",
-        "XRP"
+        "XRP",
+        "ZEC"
       ]
     },
     "RSI OB/OS": {
