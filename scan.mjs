@@ -277,12 +277,24 @@ export function normalizeConfig(raw) {
       if (!(oversold > 0 && oversold < overbought && overbought < 100)) errs.push(`${tag} "${name}": ต้องมี 0 < oversold < overbought < 100 (ตอนนี้: ${s.oversold}/${s.overbought})`);
     }
     cfg.scans.push({ name, type, enabled, exchange, sides, tfs, coins, hamaMinStep, minVolume, minRange, maxCoins,
-                     rsiLength, overbought, oversold, excludeStocks: s.exclude_tokenized_stocks === true });
+                     rsiLength, overbought, oversold, notifyExit: s.notify_exit !== false, notifyNear: s.notify_near !== false, excludeStocks: s.exclude_tokenized_stocks === true });
   });
   if (errs.length) throw new Error(errs.join("\n"));
   return cfg;
 }
 
+// ข้อที่ไม่ผ่านของเหรียญ 1 ตัวใน 1 TF (ใช้บอกว่า "ขาดอะไร" หรือ "หลุดเพราะอะไร")
+export function failLabels(side, r, hamaMin, tf) {
+  const out = [], tag = tf ? `[${tf}] ` : "";
+  const long = side === "long";
+  if (!(long ? r.atrGreen : r.atrRed)) out.push(`${tag}ATR ยังไม่เป็นสี${long ? "เขียว" : "แดง"}`);
+  if (!(long ? r.aboveMa : r.belowMa)) out.push(`${tag}ราคาไม่ได้อยู่${long ? "เหนือ" : "ใต้"}เส้น MA`);
+  if (!(long ? r.hamaOk : r.hamaBear)) {
+    const st = long ? r.step : -r.step;
+    out.push(st > 0 ? `${tag}HAMA ${long ? "เขียว" : "แดง"}ขั้น ${st} (ต้อง ≥ ${hamaMin})` : `${tag}HAMA ไม่เป็นสี${long ? "เขียว" : "แดง"}`);
+  }
+  return out;
+}
 // ---- สแกน 1 ชุด ----
 // หาแท่งที่ "ปิดแล้ว" ล่าสุดจากเวลาจริง (ไม่เดาว่าแท่งสุดท้ายคือแท่งที่ยังวิ่งอยู่ เพราะเหรียญที่ไม่มีการซื้อขายอาจยังไม่มีแท่งใหม่)
 export function lastClosedIndex(cs, hours, nowMs) {
@@ -311,7 +323,8 @@ async function prepareList(scan) {
 export async function scanOne(scan, now = Date.now()) {
   if (scan.type === "rsi") return scanRsi(scan, now);
   const { ex, list, missing, dropped } = await prepareList(scan);
-  const out = { long: [], short: [] }, flat = [], failed = [], failedBases = [];
+  const out = { long: [], short: [] }, near = { long: [], short: [] }, detail = { long: {}, short: {} };
+  const flat = [], failed = [], failedBases = [];
   let idx = 0, lastErr = "";
   async function worker() {
     for (;;) {
@@ -333,12 +346,14 @@ export async function scanOne(scan, now = Date.now()) {
         else if (isFlat) flat.push(it.base);
         else {
           for (const side of scan.sides) {
-            const flags = r => side === "long" ? [r.atrGreen, r.aboveMa, r.hamaOk] : [r.atrRed, r.belowMa, r.hamaBear];
-            if (scan.tfs.every(tf => flags(per[tf]).every(Boolean))) {
-              const p = per[scan.tfs[0]];                       // TF เล็กสุด: ใช้แสดงราคา/ระยะห่าง/HAMA
-              out[side].push({ base: it.base, tv: ex.tvPrefix + ":" + ex.tv(it.id), tvInterval: TFS[scan.tfs[0]].tv,
-                               close: p.close, dist: side === "long" ? p.dist : p.distShort, step: p.step, qv: it.qv });
-            }
+            const fails = [];
+            for (const tf of scan.tfs) fails.push(...failLabels(side, per[tf], scan.hamaMinStep, scan.tfs.length > 1 ? tf : null));
+            const p = per[scan.tfs[0]];                       // TF เล็กสุด: ใช้แสดงราคา/ระยะห่าง/HAMA
+            const row = { base: it.base, tv: ex.tvPrefix + ":" + ex.tv(it.id), tvInterval: TFS[scan.tfs[0]].tv,
+                          close: p.close, dist: side === "long" ? p.dist : p.distShort, step: p.step, qv: it.qv };
+            if (!fails.length) out[side].push(row);
+            else if (fails.length === 1) near[side].push({ ...row, miss: fails[0] });   // ขาดข้อเดียว
+            detail[side][it.base] = { fails, row };
           }
         }
       } catch (e) { failed.push(it.base); failedBases.push(it.base); lastErr = String(e && e.message || e); }
@@ -348,8 +363,8 @@ export async function scanOne(scan, now = Date.now()) {
   await Promise.all(Array.from({ length: Math.min(ex.conc, list.length) }, worker));
   if (list.length >= 3 && failed.length >= list.length / 2)
     throw new Error(`ดึงข้อมูลแท่งเทียนจาก ${scan.exchange} ไม่สำเร็จ ${failed.length}/${list.length} ตัว (ล่าสุด: ${lastErr || "ข้อมูลไม่พอ"})`);
-  for (const side of scan.sides) out[side].sort((a, b) => a.dist - b.dist);
-  return { out, flat, failed, failedBases, missing, dropped, total: list.length };
+  for (const side of scan.sides) { out[side].sort((a, b) => a.dist - b.dist); near[side].sort((a, b) => a.dist - b.dist); }
+  return { out, near, detail, flat, failed, failedBases, missing, dropped, total: list.length };
 }
 
 // ---- RSI (Wilder / ta.rsi ของ TradingView: ใช้ RMA ของส่วนต่างราคาปิด เริ่มจากค่าเฉลี่ยธรรมดา n ค่าแรก) ----
@@ -451,29 +466,55 @@ export function fmtTime(ms, timeZone) {
 }
 export function diffAndFormat(scan, res, prev, cfg, opts = {}) {
   const showAll = cfg.notify === "all" || !!opts.forceAll;
-  const next = {};
+  const next = { near: {} };
   const blocks = [];
+  const link = r => `<a href="${h(`https://www.tradingview.com/chart/?symbol=${encodeURIComponent(r.tv)}&interval=${r.tvInterval}`)}">${h(r.base)}/USDT</a>`;
+  const hasNearState = !!(prev && prev.near);                // รอบแรกหลังอัปเดตยังไม่มีข้อมูล "เกือบเข้า" เดิม: ใช้เป็นฐานเงียบๆ ไม่แจ้งรวดเดียว
   for (const side of scan.sides) {
     const rows = res.out[side];
     const before = new Set((prev && prev[side]) || []);
     const fresh = rows.filter(r => !before.has(r.base));
     // เหรียญที่ดึงข้อมูลไม่ได้รอบนี้ คงสถานะเดิมไว้ ไม่ให้ถูกแจ้งเป็น "ใหม่" ซ้ำเมื่อกลับมา
-    const keepPrev = [...before].filter(b => (res.failedBases || []).includes(b));
+    const failedSet = new Set(res.failedBases || []);
+    const keepPrev = [...before].filter(b => failedSet.has(b));
     next[side] = [...new Set([...rows.map(r => r.base), ...keepPrev])].sort();
+
+    // เกือบเข้า (ขาดข้อเดียว)
+    const near = (res.near && res.near[side]) || [];
+    const prevNear = new Set((prev && prev.near && prev.near[side]) || []);
+    next.near[side] = [...new Set([...near.map(r => r.base), ...[...prevNear].filter(b => failedSet.has(b))])].sort();
+    const nearNew = hasNearState ? near.filter(r => !prevNear.has(r.base) && (!before.has(r.base) || !scan.notifyExit)) : [];   // เพิ่งหลุดจะอยู่ในหมวด "เพิ่งหลุด" แล้ว ไม่แจ้งซ้ำสองหมวด (ถ้าปิดหมวดหลุดไว้ ให้แจ้งที่นี่แทน)
+    const nearShown = !scan.notifyNear ? [] : opts.forceAll ? near : nearNew;
+
+    // เพิ่งหลุด
+    const rowSet = new Set(rows.map(r => r.base));
+    const exits = [];
+    if (scan.notifyExit) for (const b of before) {
+      if (rowSet.has(b) || failedSet.has(b)) continue;
+      const d = res.detail && res.detail[side] && res.detail[side][b];
+      if (d) exits.push({ ...d.row, why: d.fails.join(" · ") });
+      else if ((res.flat || []).includes(b)) exits.push({ base: b, why: "ราคานิ่งเกินไป (ถูกตัวกรองตัดออก)", noPrice: true });
+    }
+
     const shown = showAll ? rows : fresh;
-    if (!shown.length) continue;
+    if (!shown.length && !exits.length && !nearShown.length) continue;
     const freshSet = new Set(fresh.map(r => r.base));
     const icon = side === "long" ? "🟢" : "🔴";
-    const lines = [`${icon} <b>${side.toUpperCase()}</b> — ใหม่ ${fresh.length} · อยู่ในรายการ ${rows.length}`];
-    for (const r of shown) {
-      const url = `https://www.tradingview.com/chart/?symbol=${encodeURIComponent(r.tv)}&interval=${r.tvInterval}`;
-      lines.push(`${freshSet.has(r.base) ? "🆕" : "▫️"} <a href="${h(url)}">${h(r.base)}/USDT</a>  ${fmtPrice(r.close)} · ห่างเส้น ${r.dist.toFixed(2)}% · HAMA ${r.step}`);
+    const parts = [`${icon} <b>${side.toUpperCase()}</b> — ใหม่ ${fresh.length} · อยู่ในรายการ ${rows.length}`];
+    if (shown.length) {
+      const lines = [];
+      for (const r of shown) lines.push(`${freshSet.has(r.base) ? "🆕" : "▫️"} ${link(r)}  ${fmtPrice(r.close)} · ห่างเส้น ${r.dist.toFixed(2)}% · HAMA ${r.step}`);
+      parts.push(lines.join("\n"));
     }
     if (!showAll) {
       const still = rows.filter(r => !freshSet.has(r.base)).map(r => r.base);
-      if (still.length) lines.push(`<i>ยังอยู่ในรายการ: ${h(still.join(", "))}</i>`);
+      if (still.length) parts.push(`<i>ยังอยู่ในรายการ: ${h(still.join(", "))}</i>`);
     }
-    blocks.push(lines.join("\n"));
+    if (exits.length) parts.push(`🚪 <b>เพิ่งหลุดจากรายการ ${exits.length}</b>\n` + exits.map(r =>
+      `▪️ ${r.noPrice ? h(r.base) + "/USDT" : link(r) + "  " + fmtPrice(r.close)}\n    หลุดเพราะ: ${h(r.why)}`).join("\n"));
+    if (nearShown.length) parts.push(`👀 <b>เกือบเข้า — ขาดข้อเดียว ${nearShown.length}</b>\n` + nearShown.map(r =>
+      `▫️ ${link(r)}  ${fmtPrice(r.close)} · ห่างเส้น ${r.dist.toFixed(2)}%\n    ขาด: ${h(r.miss)}`).join("\n"));
+    blocks.push(parts.join("\n\n"));
   }
   let text = null;
   if (blocks.length) {
@@ -483,7 +524,7 @@ export function diffAndFormat(scan, res, prev, cfg, opts = {}) {
     if (res.dropped.length) foot.push(`ถูกตัวกรองตัด: ${res.dropped.join(", ")}`);
     if (res.flat.length) foot.push(`ราคานิ่งเกินไป: ${res.flat.join(", ")}`);
     if (res.failed.length) foot.push(`ดึงข้อมูลไม่ได้: ${res.failed.join(", ")}`);
-    text = [head, ...blocks, ...(foot.length ? [`<i>${h(foot.join(" · "))}</i>`] : [])].join("\n\n");
+    text = [head, blocks.join("\n\n──────────\n\n"), ...(foot.length ? [`<i>${h(foot.join(" · "))}</i>`] : [])].join("\n\n");
   }
   return { text, next };
 }
