@@ -11,11 +11,12 @@
         "BNB",
         "BTC",
         "DOGE",
-        "ENA",
         "ETH",
         "SOL",
+        "TAO",
         "TRX",
-        "WLFI"
+        "WLFI",
+        "XRP"
       ]
     },
     "RSI OB/OS": {
