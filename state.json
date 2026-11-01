@@ -6,14 +6,15 @@
         "long": [
           "AVAX",
           "ETH",
-          "SUI"
-        ],
-        "short": [
-          "BTC",
-          "DOGE",
+          "SUI",
           "TAO",
           "WLD",
           "XRP"
+        ],
+        "short": [
+          "BNB",
+          "BTC",
+          "DOGE"
         ]
       },
       "long": [
@@ -24,7 +25,6 @@
       ],
       "short": [
         "ADA",
-        "BNB",
         "ENA",
         "HYPE",
         "SOL",
@@ -40,9 +40,7 @@
         "1d": []
       },
       "os": {
-        "1h": [
-          "TRX"
-        ],
+        "1h": [],
         "4h": [
           "TRX"
         ],
