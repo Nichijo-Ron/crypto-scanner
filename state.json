@@ -5,11 +5,10 @@
       "near": {
         "long": [
           "AVAX",
+          "TRX",
           "UNI"
         ],
-        "short": [
-          "TRX"
-        ]
+        "short": []
       },
       "long": [
         "BNB",
