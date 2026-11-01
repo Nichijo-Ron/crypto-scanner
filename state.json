@@ -4,15 +4,14 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "DOGE",
-          "LINK"
+          "SUI"
         ],
         "short": [
+          "DOGE",
+          "LINK",
           "ONDO",
-          "SUI",
           "TRX",
-          "WLD",
-          "XRP"
+          "WLD"
         ]
       },
       "long": [
@@ -30,6 +29,7 @@
         "HYPE",
         "SOL",
         "TAO",
+        "XRP",
         "ZEC"
       ]
     },
