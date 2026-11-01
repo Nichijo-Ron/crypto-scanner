@@ -9,7 +9,6 @@
           "LINK",
           "SUI",
           "TAO",
-          "WLD",
           "XRP"
         ],
         "short": []
@@ -21,7 +20,8 @@
         "ETH",
         "ONDO",
         "UNI",
-        "VIRTUAL"
+        "VIRTUAL",
+        "WLD"
       ],
       "short": [
         "ENA",
