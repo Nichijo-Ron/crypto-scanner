@@ -8,13 +8,12 @@
           "ETH",
           "SUI",
           "TAO",
-          "WLD",
           "XRP"
         ],
         "short": [
-          "BNB",
           "BTC",
-          "DOGE"
+          "DOGE",
+          "WLD"
         ]
       },
       "long": [
@@ -25,6 +24,7 @@
       ],
       "short": [
         "ADA",
+        "BNB",
         "ENA",
         "HYPE",
         "SOL",
