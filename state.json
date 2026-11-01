@@ -9,11 +9,10 @@
           "LINK",
           "SUI",
           "TAO",
+          "WLD",
           "XRP"
         ],
-        "short": [
-          "SOL"
-        ]
+        "short": []
       },
       "long": [
         "AVAX",
@@ -22,12 +21,12 @@
         "ETH",
         "ONDO",
         "UNI",
-        "VIRTUAL",
-        "WLD"
+        "VIRTUAL"
       ],
       "short": [
         "ENA",
         "HYPE",
+        "SOL",
         "TRX",
         "WLFI",
         "ZEC"
@@ -35,9 +34,7 @@
     },
     "RSI OB/OS": {
       "ob": {
-        "1h": [
-          "UNI"
-        ],
+        "1h": [],
         "4h": [],
         "1d": []
       },
