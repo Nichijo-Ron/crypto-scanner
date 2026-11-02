@@ -4,9 +4,7 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [],
-        "short": [
-          "UNI"
-        ]
+        "short": []
       },
       "long": [
         "TRX"
@@ -25,6 +23,7 @@
         "SOL",
         "SUI",
         "TAO",
+        "UNI",
         "VIRTUAL",
         "WLD",
         "WLFI",
@@ -40,10 +39,12 @@
       },
       "os": {
         "1h": [
+          "ADA",
           "AVAX",
+          "BTC",
           "DOGE",
           "ENA",
-          "LINK",
+          "HYPE",
           "ONDO",
           "SOL",
           "SUI",
