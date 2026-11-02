@@ -4,13 +4,12 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "BTC"
+          "UNI",
+          "ZEC"
         ],
         "short": [
           "DOGE",
-          "SOL",
-          "UNI",
-          "ZEC"
+          "SOL"
         ]
       },
       "long": [
