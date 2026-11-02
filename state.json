@@ -4,9 +4,7 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [],
-        "short": [
-          "XRP"
-        ]
+        "short": []
       },
       "long": [
         "TRX"
@@ -29,6 +27,7 @@
         "VIRTUAL",
         "WLD",
         "WLFI",
+        "XRP",
         "ZEC"
       ]
     },
@@ -40,7 +39,6 @@
       },
       "os": {
         "1h": [
-          "BTC",
           "ZEC"
         ],
         "4h": [
