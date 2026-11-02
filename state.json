@@ -4,16 +4,17 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "UNI"
+          "UNI",
+          "XRP"
         ],
         "short": [
           "DOGE",
           "SOL",
-          "VIRTUAL",
-          "XRP"
+          "VIRTUAL"
         ]
       },
       "long": [
+        "BNB",
         "BTC",
         "ETH",
         "TRX",
