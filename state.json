@@ -8,12 +8,13 @@
         ],
         "short": [
           "DOGE",
-          "SOL"
+          "ETH",
+          "SOL",
+          "ZEC"
         ]
       },
       "long": [
-        "TRX",
-        "ZEC"
+        "TRX"
       ],
       "short": [
         "ADA",
@@ -42,7 +43,10 @@
       },
       "os": {
         "1h": [
-          "ENA"
+          "ENA",
+          "ONDO",
+          "TAO",
+          "WLD"
         ],
         "4h": [],
         "1d": [
