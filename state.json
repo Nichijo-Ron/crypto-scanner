@@ -4,19 +4,20 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
+          "WLFI",
           "XRP"
         ],
         "short": [
-          "ETH"
+          "AVAX",
+          "ETH",
+          "UNI"
         ]
       },
       "long": [
-        "TRX",
-        "WLFI"
+        "TRX"
       ],
       "short": [
         "ADA",
-        "AVAX",
         "BNB",
         "BTC",
         "DOGE",
@@ -35,8 +36,7 @@
     "RSI OB/OS": {
       "ob": {
         "1h": [
-          "TRX",
-          "WLFI"
+          "TRX"
         ],
         "4h": [],
         "1d": []
