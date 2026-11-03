@@ -4,7 +4,10 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [],
-        "short": []
+        "short": [
+          "WLFI",
+          "XRP"
+        ]
       },
       "long": [
         "TRX"
@@ -26,8 +29,6 @@
         "UNI",
         "VIRTUAL",
         "WLD",
-        "WLFI",
-        "XRP",
         "ZEC"
       ]
     },
@@ -41,17 +42,9 @@
       },
       "os": {
         "1h": [
-          "AVAX",
-          "ENA",
-          "SUI",
-          "TAO",
-          "UNI",
-          "WLD",
           "ZEC"
         ],
-        "4h": [
-          "TAO"
-        ],
+        "4h": [],
         "1d": [
           "SOL"
         ]
