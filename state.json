@@ -3,14 +3,14 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
-        "short": [
-          "WLFI",
+        "long": [
           "XRP"
-        ]
+        ],
+        "short": []
       },
       "long": [
-        "TRX"
+        "TRX",
+        "WLFI"
       ],
       "short": [
         "ADA",
@@ -35,7 +35,7 @@
     "RSI OB/OS": {
       "ob": {
         "1h": [
-          "TRX"
+          "WLFI"
         ],
         "4h": [],
         "1d": []
