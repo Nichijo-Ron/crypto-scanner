@@ -4,10 +4,13 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
+          "BTC",
           "TAO",
           "ZEC"
         ],
         "short": [
+          "ADA",
+          "ONDO",
           "SOL"
         ]
       },
@@ -27,7 +30,6 @@
         "BNB",
         "ENA",
         "LINK",
-        "ONDO",
         "WLD"
       ]
     },
