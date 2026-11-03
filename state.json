@@ -9,9 +9,7 @@
           "TAO"
         ],
         "short": [
-          "ADA",
-          "ONDO",
-          "SOL"
+          "ADA"
         ]
       },
       "long": [
@@ -30,13 +28,14 @@
         "BNB",
         "ENA",
         "LINK",
+        "ONDO",
         "WLD"
       ]
     },
     "RSI OB/OS": {
       "ob": {
         "1h": [
-          "XRP"
+          "TRX"
         ],
         "4h": [],
         "1d": []
