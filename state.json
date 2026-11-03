@@ -3,7 +3,9 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
+        "long": [
+          "XRP"
+        ],
         "short": []
       },
       "long": [
@@ -27,7 +29,6 @@
         "UNI",
         "VIRTUAL",
         "WLD",
-        "XRP",
         "ZEC"
       ]
     },
@@ -41,11 +42,12 @@
       },
       "os": {
         "1h": [
-          "SUI",
-          "WLD",
-          "ZEC"
+          "WLD"
         ],
-        "4h": [],
+        "4h": [
+          "TAO",
+          "WLD"
+        ],
         "1d": [
           "SOL"
         ]
