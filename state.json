@@ -4,18 +4,19 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "AVAX",
           "BTC",
           "TAO"
         ],
         "short": [
-          "ADA"
+          "ADA",
+          "HYPE",
+          "SOL"
         ]
       },
       "long": [
+        "AVAX",
         "DOGE",
         "ETH",
-        "HYPE",
         "SUI",
         "TRX",
         "UNI",
