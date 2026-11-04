@@ -7,6 +7,7 @@
           "TRX"
         ],
         "short": [
+          "XRP",
           "ZEC"
         ]
       },
@@ -28,8 +29,7 @@
         "UNI",
         "VIRTUAL",
         "WLD",
-        "WLFI",
-        "XRP"
+        "WLFI"
       ]
     },
     "RSI OB/OS": {
@@ -40,13 +40,7 @@
       },
       "os": {
         "1h": [
-          "ADA",
-          "BNB",
-          "BTC",
-          "DOGE",
-          "HYPE",
-          "LINK",
-          "SOL"
+          "LINK"
         ],
         "4h": [],
         "1d": [
