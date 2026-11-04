@@ -4,10 +4,11 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "HYPE",
           "WLD"
         ],
-        "short": []
+        "short": [
+          "HYPE"
+        ]
       },
       "long": [
         "ADA",
@@ -35,17 +36,8 @@
     "RSI OB/OS": {
       "ob": {
         "1h": [
-          "ADA",
-          "AVAX",
-          "BNB",
           "BTC",
-          "DOGE",
-          "ETH",
-          "LINK",
-          "ONDO",
-          "SOL",
-          "SUI",
-          "UNI"
+          "ETH"
         ],
         "4h": [
           "ETH",
