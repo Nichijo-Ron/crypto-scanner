@@ -3,10 +3,10 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
-        "short": [
-          "HYPE"
-        ]
+        "long": [
+          "WLD"
+        ],
+        "short": []
       },
       "long": [
         "ADA",
@@ -27,6 +27,7 @@
         "ZEC"
       ],
       "short": [
+        "HYPE",
         "TRX",
         "WLFI"
       ]
