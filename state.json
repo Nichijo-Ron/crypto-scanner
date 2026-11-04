@@ -7,30 +7,29 @@
           "TRX"
         ],
         "short": [
-          "ADA",
-          "AVAX",
-          "BTC",
-          "ENA",
-          "ETH",
-          "SUI",
-          "TAO",
-          "UNI",
-          "XRP"
+          "ZEC"
         ]
       },
-      "long": [
-        "ZEC"
-      ],
+      "long": [],
       "short": [
+        "ADA",
+        "AVAX",
         "BNB",
+        "BTC",
         "DOGE",
+        "ENA",
+        "ETH",
         "HYPE",
         "LINK",
         "ONDO",
         "SOL",
+        "SUI",
+        "TAO",
+        "UNI",
         "VIRTUAL",
         "WLD",
-        "WLFI"
+        "WLFI",
+        "XRP"
       ]
     },
     "RSI OB/OS": {
@@ -40,7 +39,15 @@
         "1d": []
       },
       "os": {
-        "1h": [],
+        "1h": [
+          "ADA",
+          "BNB",
+          "BTC",
+          "DOGE",
+          "HYPE",
+          "LINK",
+          "SOL"
+        ],
         "4h": [],
         "1d": [
           "SOL"
