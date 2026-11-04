@@ -3,14 +3,13 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
-          "ADA"
-        ],
+        "long": [],
         "short": [
           "WLFI"
         ]
       },
       "long": [
+        "ADA",
         "AVAX",
         "BNB",
         "BTC",
@@ -36,12 +35,21 @@
     "RSI OB/OS": {
       "ob": {
         "1h": [
+          "ADA",
           "AVAX",
+          "BNB",
+          "BTC",
+          "DOGE",
           "ETH",
-          "XRP",
-          "ZEC"
+          "LINK",
+          "SOL",
+          "SUI",
+          "XRP"
         ],
-        "4h": [],
+        "4h": [
+          "ETH",
+          "XRP"
+        ],
         "1d": []
       },
       "os": {
