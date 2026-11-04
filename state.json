@@ -4,11 +4,10 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "LINK",
-          "TRX"
+          "WLFI"
         ],
         "short": [
-          "WLFI"
+          "TRX"
         ]
       },
       "long": [
@@ -20,7 +19,9 @@
         "ENA",
         "ETH",
         "HYPE",
+        "LINK",
         "ONDO",
+        "SOL",
         "SUI",
         "TAO",
         "UNI",
@@ -34,7 +35,7 @@
     "RSI OB/OS": {
       "ob": {
         "1h": [
-          "WLD",
+          "ONDO",
           "ZEC"
         ],
         "4h": [],
