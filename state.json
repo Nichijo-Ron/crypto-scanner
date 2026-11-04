@@ -3,9 +3,7 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
-          "WLD"
-        ],
+        "long": [],
         "short": [
           "HYPE"
         ]
