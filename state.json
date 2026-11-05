@@ -12,9 +12,7 @@
           "TAO",
           "VIRTUAL"
         ],
-        "short": [
-          "UNI"
-        ]
+        "short": []
       },
       "long": [
         "ADA",
@@ -29,6 +27,7 @@
       "short": [
         "HYPE",
         "TRX",
+        "UNI",
         "WLD",
         "WLFI"
       ]
@@ -40,9 +39,7 @@
         "1d": []
       },
       "os": {
-        "1h": [
-          "WLFI"
-        ],
+        "1h": [],
         "4h": [
           "WLFI"
         ],
