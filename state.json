@@ -38,23 +38,14 @@
       },
       "os": {
         "1h": [
-          "ADA",
           "BTC",
-          "DOGE",
-          "ENA",
           "ETH",
           "HYPE",
-          "LINK",
           "ONDO",
-          "SOL",
-          "SUI",
           "UNI",
-          "WLD",
           "XRP"
         ],
-        "4h": [
-          "WLFI"
-        ],
+        "4h": [],
         "1d": [
           "WLFI"
         ]
