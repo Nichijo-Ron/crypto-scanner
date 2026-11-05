@@ -4,9 +4,12 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "WLD"
+          "ONDO",
+          "UNI"
         ],
-        "short": []
+        "short": [
+          "WLD"
+        ]
       },
       "long": [
         "ADA",
@@ -17,11 +20,9 @@
         "ENA",
         "ETH",
         "LINK",
-        "ONDO",
         "SOL",
         "SUI",
         "TAO",
-        "UNI",
         "VIRTUAL",
         "XRP",
         "ZEC"
