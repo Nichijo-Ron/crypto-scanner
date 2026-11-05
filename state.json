@@ -39,10 +39,14 @@
       },
       "os": {
         "1h": [
+          "BNB",
           "BTC",
+          "DOGE",
           "ETH",
           "HYPE",
           "ONDO",
+          "SOL",
+          "SUI",
           "UNI",
           "WLD",
           "XRP"
