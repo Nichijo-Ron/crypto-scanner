@@ -4,8 +4,8 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "ONDO",
-          "UNI"
+          "ENA",
+          "ONDO"
         ],
         "short": [
           "WLD"
@@ -17,7 +17,6 @@
         "BNB",
         "BTC",
         "DOGE",
-        "ENA",
         "ETH",
         "LINK",
         "SOL",
@@ -40,8 +39,12 @@
         "1d": []
       },
       "os": {
-        "1h": [],
-        "4h": [],
+        "1h": [
+          "WLFI"
+        ],
+        "4h": [
+          "WLFI"
+        ],
         "1d": [
           "WLFI"
         ]
