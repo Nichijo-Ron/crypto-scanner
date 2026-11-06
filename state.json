@@ -39,8 +39,6 @@
       },
       "os": {
         "1h": [
-          "BNB",
-          "BTC",
           "DOGE",
           "ENA",
           "ETH",
@@ -48,12 +46,16 @@
           "ONDO",
           "SOL",
           "SUI",
-          "UNI",
+          "TAO",
           "WLD",
           "XRP"
         ],
-        "4h": [],
+        "4h": [
+          "HYPE",
+          "WLD"
+        ],
         "1d": [
+          "SOL",
           "WLFI"
         ]
       }
