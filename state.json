@@ -4,11 +4,11 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "WLFI",
-          "ZEC"
+          "WLFI"
         ],
         "short": [
-          "TRX"
+          "TRX",
+          "ZEC"
         ]
       },
       "long": [],
