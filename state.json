@@ -8,7 +8,9 @@
           "TRX"
         ]
       },
-      "long": [],
+      "long": [
+        "ZEC"
+      ],
       "short": [
         "ADA",
         "AVAX",
@@ -27,8 +29,7 @@
         "VIRTUAL",
         "WLD",
         "WLFI",
-        "XRP",
-        "ZEC"
+        "XRP"
       ]
     },
     "RSI OB/OS": {
@@ -39,15 +40,6 @@
       },
       "os": {
         "1h": [
-          "DOGE",
-          "ENA",
-          "ETH",
-          "HYPE",
-          "ONDO",
-          "SOL",
-          "SUI",
-          "TAO",
-          "WLD",
           "XRP"
         ],
         "4h": [
