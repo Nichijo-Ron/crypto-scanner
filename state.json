@@ -8,6 +8,7 @@
         ],
         "short": [
           "HYPE",
+          "LINK",
           "SUI",
           "UNI",
           "WLFI"
@@ -25,7 +26,6 @@
         "DOGE",
         "ENA",
         "ETH",
-        "LINK",
         "ONDO",
         "SOL",
         "VIRTUAL",
@@ -41,9 +41,7 @@
       },
       "os": {
         "1h": [],
-        "4h": [
-          "XRP"
-        ],
+        "4h": [],
         "1d": [
           "WLFI"
         ]
