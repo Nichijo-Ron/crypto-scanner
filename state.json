@@ -5,14 +5,13 @@
       "near": {
         "long": [
           "BNB",
-          "LINK"
+          "TAO"
         ],
         "short": [
           "WLFI"
         ]
       },
       "long": [
-        "TAO",
         "TRX",
         "UNI"
       ],
@@ -24,6 +23,7 @@
         "ENA",
         "ETH",
         "HYPE",
+        "LINK",
         "ONDO",
         "SOL",
         "SUI",
@@ -40,10 +40,10 @@
         "1d": []
       },
       "os": {
-        "1h": [],
-        "4h": [
-          "XRP"
+        "1h": [
+          "ENA"
         ],
+        "4h": [],
         "1d": [
           "WLFI"
         ]
