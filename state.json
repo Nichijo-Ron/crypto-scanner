@@ -4,15 +4,16 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "UNI",
-          "WLFI"
+          "UNI"
         ],
         "short": [
+          "LINK",
           "TAO"
         ]
       },
       "long": [
-        "TRX"
+        "TRX",
+        "WLFI"
       ],
       "short": [
         "ADA",
@@ -23,7 +24,6 @@
         "ENA",
         "ETH",
         "HYPE",
-        "LINK",
         "ONDO",
         "SOL",
         "SUI",
