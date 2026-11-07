@@ -7,9 +7,9 @@
           "TAO"
         ],
         "short": [
-          "BNB",
           "HYPE",
           "TRX",
+          "UNI",
           "WLFI"
         ]
       },
@@ -19,6 +19,7 @@
       "short": [
         "ADA",
         "AVAX",
+        "BNB",
         "BTC",
         "DOGE",
         "ENA",
@@ -27,7 +28,6 @@
         "ONDO",
         "SOL",
         "SUI",
-        "UNI",
         "VIRTUAL",
         "WLD",
         "XRP"
