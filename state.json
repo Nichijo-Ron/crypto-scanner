@@ -3,16 +3,17 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
+        "long": [
+          "TAO",
+          "ZEC"
+        ],
         "short": [
           "UNI",
           "WLFI"
         ]
       },
       "long": [
-        "TAO",
-        "TRX",
-        "ZEC"
+        "TRX"
       ],
       "short": [
         "ADA",
