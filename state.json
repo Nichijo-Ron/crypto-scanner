@@ -4,17 +4,17 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "TAO",
-          "UNI",
-          "WLFI"
-        ],
-        "short": [
           "BNB",
           "LINK"
+        ],
+        "short": [
+          "WLFI"
         ]
       },
       "long": [
-        "TRX"
+        "TAO",
+        "TRX",
+        "UNI"
       ],
       "short": [
         "ADA",
@@ -40,9 +40,7 @@
         "1d": []
       },
       "os": {
-        "1h": [
-          "ENA"
-        ],
+        "1h": [],
         "4h": [
           "XRP"
         ],
