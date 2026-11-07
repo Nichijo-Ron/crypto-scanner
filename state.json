@@ -3,28 +3,27 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
-          "TAO"
-        ],
+        "long": [],
         "short": [
+          "BNB",
+          "ETH",
+          "LINK",
           "UNI",
           "ZEC"
         ]
       },
       "long": [
+        "TAO",
         "TRX",
         "WLFI"
       ],
       "short": [
         "ADA",
         "AVAX",
-        "BNB",
         "BTC",
         "DOGE",
         "ENA",
-        "ETH",
         "HYPE",
-        "LINK",
         "ONDO",
         "SOL",
         "SUI",
@@ -40,9 +39,7 @@
         "1d": []
       },
       "os": {
-        "1h": [
-          "ONDO"
-        ],
+        "1h": [],
         "4h": [],
         "1d": [
           "WLFI"
