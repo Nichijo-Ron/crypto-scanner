@@ -4,16 +4,17 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "TAO"
+          "TRX"
         ],
         "short": [
           "HYPE",
-          "TRX",
+          "SUI",
           "UNI",
           "WLFI"
         ]
       },
       "long": [
+        "TAO",
         "ZEC"
       ],
       "short": [
@@ -27,7 +28,6 @@
         "LINK",
         "ONDO",
         "SOL",
-        "SUI",
         "VIRTUAL",
         "WLD",
         "XRP"
