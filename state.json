@@ -3,11 +3,13 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
-        "short": [
+        "long": [
           "TAO",
-          "TRX",
           "WLFI"
+        ],
+        "short": [
+          "HYPE",
+          "TRX"
         ]
       },
       "long": [
@@ -21,7 +23,6 @@
         "DOGE",
         "ENA",
         "ETH",
-        "HYPE",
         "LINK",
         "ONDO",
         "SOL",
