@@ -8,13 +8,10 @@
           "WLFI"
         ],
         "short": [
-          "ETH",
-          "LINK",
-          "ZEC"
+          "TAO"
         ]
       },
       "long": [
-        "TAO",
         "TRX"
       ],
       "short": [
@@ -24,13 +21,16 @@
         "BTC",
         "DOGE",
         "ENA",
+        "ETH",
         "HYPE",
+        "LINK",
         "ONDO",
         "SOL",
         "SUI",
         "VIRTUAL",
         "WLD",
-        "XRP"
+        "XRP",
+        "ZEC"
       ]
     },
     "RSI OB/OS": {
@@ -40,8 +40,13 @@
         "1d": []
       },
       "os": {
-        "1h": [],
-        "4h": [],
+        "1h": [
+          "ENA",
+          "ONDO"
+        ],
+        "4h": [
+          "XRP"
+        ],
         "1d": [
           "WLFI"
         ]
