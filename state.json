@@ -4,10 +4,11 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "BNB"
+          "BNB",
+          "TAO"
         ],
         "short": [
-          "TAO",
+          "ETH",
           "WLFI"
         ]
       },
@@ -21,7 +22,6 @@
         "BTC",
         "DOGE",
         "ENA",
-        "ETH",
         "HYPE",
         "LINK",
         "ONDO",
