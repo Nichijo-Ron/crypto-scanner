@@ -7,7 +7,6 @@
           "BNB"
         ],
         "short": [
-          "BTC",
           "WLFI"
         ]
       },
@@ -18,6 +17,7 @@
       "short": [
         "ADA",
         "AVAX",
+        "BTC",
         "DOGE",
         "ENA",
         "ETH",
@@ -41,7 +41,8 @@
       },
       "os": {
         "1h": [
-          "ENA"
+          "ENA",
+          "ONDO"
         ],
         "4h": [],
         "1d": [
