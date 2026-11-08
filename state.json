@@ -3,12 +3,12 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
-        "short": [
+        "long": [
           "BTC",
           "ETH",
           "WLFI"
-        ]
+        ],
+        "short": []
       },
       "long": [
         "BNB",
