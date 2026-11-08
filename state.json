@@ -7,7 +7,10 @@
           "BTC",
           "ETH"
         ],
-        "short": []
+        "short": [
+          "AVAX",
+          "SOL"
+        ]
       },
       "long": [
         "BNB",
@@ -17,13 +20,11 @@
       ],
       "short": [
         "ADA",
-        "AVAX",
         "DOGE",
         "ENA",
         "HYPE",
         "LINK",
         "ONDO",
-        "SOL",
         "SUI",
         "UNI",
         "VIRTUAL",
@@ -40,7 +41,9 @@
       },
       "os": {
         "1h": [],
-        "4h": [],
+        "4h": [
+          "WLD"
+        ],
         "1d": [
           "WLFI"
         ]
