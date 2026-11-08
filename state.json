@@ -3,12 +3,13 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
+        "long": [
+          "TAO"
+        ],
         "short": []
       },
       "long": [
         "BNB",
-        "TAO",
         "TRX",
         "WLFI"
       ],
