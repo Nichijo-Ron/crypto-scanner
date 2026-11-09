@@ -39,15 +39,25 @@
       },
       "os": {
         "1h": [
+          "BNB",
+          "BTC",
+          "DOGE",
           "ETH",
           "HYPE",
+          "SOL",
           "TRX",
           "VIRTUAL",
           "XRP"
         ],
         "4h": [
+          "ADA",
+          "BTC",
+          "DOGE",
           "ETH",
           "HYPE",
+          "SOL",
+          "VIRTUAL",
+          "WLD",
           "XRP"
         ],
         "1d": [
