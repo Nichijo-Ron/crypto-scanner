@@ -6,10 +6,10 @@
         "long": [
           "ENA",
           "LINK",
-          "UNI",
           "VIRTUAL"
         ],
         "short": [
+          "ADA",
           "BNB",
           "BTC",
           "DOGE",
@@ -18,11 +18,11 @@
         ]
       },
       "long": [
-        "ADA",
         "AVAX",
         "ONDO",
         "SUI",
         "TAO",
+        "UNI",
         "WLFI"
       ],
       "short": [
