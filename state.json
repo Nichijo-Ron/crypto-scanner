@@ -6,9 +6,7 @@
         "long": [],
         "short": [
           "LINK",
-          "ONDO",
-          "UNI",
-          "WLD"
+          "UNI"
         ]
       },
       "long": [],
@@ -21,11 +19,13 @@
         "ENA",
         "ETH",
         "HYPE",
+        "ONDO",
         "SOL",
         "SUI",
         "TAO",
         "TRX",
         "VIRTUAL",
+        "WLD",
         "WLFI",
         "XRP",
         "ZEC"
