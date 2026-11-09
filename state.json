@@ -6,7 +6,6 @@
         "long": [],
         "short": [
           "LINK",
-          "TRX",
           "UNI"
         ]
       },
@@ -24,6 +23,7 @@
         "SOL",
         "SUI",
         "TAO",
+        "TRX",
         "VIRTUAL",
         "WLD",
         "WLFI",
@@ -39,18 +39,11 @@
       },
       "os": {
         "1h": [
-          "ETH",
           "XRP"
         ],
         "4h": [
-          "ADA",
-          "BTC",
-          "DOGE",
           "ETH",
           "HYPE",
-          "SOL",
-          "VIRTUAL",
-          "WLD",
           "XRP"
         ],
         "1d": [
