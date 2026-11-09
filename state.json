@@ -28,21 +28,20 @@
         "HYPE",
         "SOL",
         "TRX",
-        "WLD",
         "XRP",
         "ZEC"
       ]
     },
     "RSI OB/OS": {
       "ob": {
-        "1h": [],
+        "1h": [
+          "AVAX"
+        ],
         "4h": [],
         "1d": []
       },
       "os": {
-        "1h": [
-          "XRP"
-        ],
+        "1h": [],
         "4h": [
           "ETH",
           "HYPE",
