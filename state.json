@@ -6,6 +6,7 @@
         "long": [],
         "short": [
           "LINK",
+          "TRX",
           "UNI"
         ]
       },
@@ -23,7 +24,6 @@
         "SOL",
         "SUI",
         "TAO",
-        "TRX",
         "VIRTUAL",
         "WLD",
         "WLFI",
