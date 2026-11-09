@@ -4,6 +4,8 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
+          "ENA",
+          "LINK",
           "UNI",
           "VIRTUAL"
         ],
@@ -18,8 +20,6 @@
       "long": [
         "ADA",
         "AVAX",
-        "ENA",
-        "LINK",
         "ONDO",
         "SUI",
         "TAO",
