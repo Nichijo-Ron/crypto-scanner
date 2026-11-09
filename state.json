@@ -26,7 +26,6 @@
         "TRX",
         "VIRTUAL",
         "WLD",
-        "WLFI",
         "XRP",
         "ZEC"
       ]
@@ -39,15 +38,7 @@
       },
       "os": {
         "1h": [
-          "BNB",
-          "BTC",
-          "DOGE",
-          "ETH",
-          "HYPE",
-          "SOL",
-          "TRX",
-          "VIRTUAL",
-          "XRP"
+          "TRX"
         ],
         "4h": [
           "ADA",
