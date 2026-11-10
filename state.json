@@ -4,17 +4,17 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "ONDO",
           "WLFI"
         ],
         "short": [
+          "AVAX",
+          "ONDO",
           "TRX"
         ]
       },
       "long": [],
       "short": [
         "ADA",
-        "AVAX",
         "BNB",
         "BTC",
         "DOGE",
