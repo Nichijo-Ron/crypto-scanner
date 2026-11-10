@@ -3,14 +3,14 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
+        "long": [
+          "WLFI"
+        ],
         "short": [
           "TRX"
         ]
       },
-      "long": [
-        "WLFI"
-      ],
+      "long": [],
       "short": [
         "ADA",
         "AVAX",
@@ -40,10 +40,6 @@
       },
       "os": {
         "1h": [
-          "DOGE",
-          "ETH",
-          "HYPE",
-          "SOL",
           "ZEC"
         ],
         "4h": [
