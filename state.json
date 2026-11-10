@@ -5,7 +5,6 @@
       "near": {
         "long": [],
         "short": [
-          "ONDO",
           "TRX"
         ]
       },
@@ -22,6 +21,7 @@
         "ETH",
         "HYPE",
         "LINK",
+        "ONDO",
         "SOL",
         "SUI",
         "TAO",
@@ -40,14 +40,10 @@
       },
       "os": {
         "1h": [
-          "BNB",
           "DOGE",
           "ETH",
           "HYPE",
           "SOL",
-          "SUI",
-          "VIRTUAL",
-          "XRP",
           "ZEC"
         ],
         "4h": [
