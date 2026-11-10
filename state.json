@@ -7,20 +7,20 @@
           "BNB",
           "BTC",
           "ENA",
-          "VIRTUAL"
+          "LINK",
+          "SUI"
         ],
         "short": [
           "ADA",
           "DOGE",
           "HYPE",
+          "VIRTUAL",
           "WLD"
         ]
       },
       "long": [
         "AVAX",
-        "LINK",
         "ONDO",
-        "SUI",
         "TAO",
         "UNI",
         "WLFI"
