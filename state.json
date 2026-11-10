@@ -4,17 +4,16 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "SUI"
-        ],
-        "short": [
           "ADA",
           "BNB",
+          "ENA",
+          "LINK",
+          "UNI"
+        ],
+        "short": [
           "BTC",
           "DOGE",
-          "ENA",
           "HYPE",
-          "LINK",
-          "UNI",
           "VIRTUAL",
           "WLD"
         ]
@@ -22,6 +21,7 @@
       "long": [
         "AVAX",
         "ONDO",
+        "SUI",
         "TAO",
         "WLFI"
       ],
