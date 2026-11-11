@@ -5,12 +5,12 @@
       "near": {
         "long": [
           "AVAX",
-          "ENA",
-          "ONDO",
-          "TAO",
           "WLFI"
         ],
-        "short": []
+        "short": [
+          "ENA",
+          "ONDO"
+        ]
       },
       "long": [],
       "short": [
@@ -23,6 +23,7 @@
         "LINK",
         "SOL",
         "SUI",
+        "TAO",
         "TRX",
         "UNI",
         "VIRTUAL",
@@ -38,7 +39,10 @@
         "1d": []
       },
       "os": {
-        "1h": [],
+        "1h": [
+          "UNI",
+          "ZEC"
+        ],
         "4h": [
           "ZEC"
         ],
