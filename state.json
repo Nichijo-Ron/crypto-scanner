@@ -6,16 +6,15 @@
         "long": [
           "BNB",
           "BTC",
-          "DOGE",
-          "ENA",
-          "LINK",
-          "ONDO",
           "SUI",
-          "WLD",
-          "WLFI"
+          "WLD"
         ],
         "short": [
-          "XRP"
+          "DOGE",
+          "ETH",
+          "LINK",
+          "ONDO",
+          "WLFI"
         ]
       },
       "long": [
@@ -27,8 +26,10 @@
         "VIRTUAL"
       ],
       "short": [
+        "ENA",
         "TRX",
         "UNI",
+        "XRP",
         "ZEC"
       ]
     },
