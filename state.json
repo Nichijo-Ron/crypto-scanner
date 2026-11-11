@@ -6,27 +6,27 @@
         "long": [
           "BNB",
           "BTC",
+          "HYPE",
           "SUI",
+          "VIRTUAL",
           "WLD"
         ],
         "short": [
-          "DOGE",
           "ETH",
           "LINK",
-          "ONDO",
           "WLFI"
         ]
       },
       "long": [
         "ADA",
         "AVAX",
-        "HYPE",
         "SOL",
-        "TAO",
-        "VIRTUAL"
+        "TAO"
       ],
       "short": [
+        "DOGE",
         "ENA",
+        "ONDO",
         "TRX",
         "UNI",
         "XRP",
