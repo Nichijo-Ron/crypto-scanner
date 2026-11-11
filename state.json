@@ -4,14 +4,14 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "AVAX",
-          "WLFI"
-        ],
-        "short": [
           "ONDO"
-        ]
+        ],
+        "short": []
       },
-      "long": [],
+      "long": [
+        "AVAX",
+        "WLFI"
+      ],
       "short": [
         "ADA",
         "BNB",
@@ -40,8 +40,7 @@
       },
       "os": {
         "1h": [
-          "UNI",
-          "ZEC"
+          "UNI"
         ],
         "4h": [
           "ZEC"
