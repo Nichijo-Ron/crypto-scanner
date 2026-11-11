@@ -6,10 +6,12 @@
         "long": [
           "AVAX",
           "ENA",
-          "ONDO",
-          "TAO"
+          "TAO",
+          "WLFI"
         ],
-        "short": []
+        "short": [
+          "ONDO"
+        ]
       },
       "long": [],
       "short": [
@@ -26,7 +28,6 @@
         "UNI",
         "VIRTUAL",
         "WLD",
-        "WLFI",
         "XRP",
         "ZEC"
       ]
