@@ -6,15 +6,13 @@
         "long": [
           "ADA",
           "ENA",
-          "ONDO",
           "TAO",
+          "VIRTUAL",
           "WLD"
         ],
         "short": [
-          "HYPE",
-          "SOL",
-          "SUI",
-          "VIRTUAL"
+          "ONDO",
+          "SUI"
         ]
       },
       "long": [
@@ -26,7 +24,9 @@
         "BTC",
         "DOGE",
         "ETH",
+        "HYPE",
         "LINK",
+        "SOL",
         "TRX",
         "UNI",
         "XRP",
