@@ -6,9 +6,7 @@
         "long": [
           "AVAX"
         ],
-        "short": [
-          "SOL"
-        ]
+        "short": []
       },
       "long": [
         "WLFI"
@@ -23,6 +21,7 @@
         "HYPE",
         "LINK",
         "ONDO",
+        "SOL",
         "SUI",
         "TAO",
         "TRX",
@@ -41,10 +40,12 @@
       },
       "os": {
         "1h": [
+          "BNB",
           "ENA"
         ],
         "4h": [
           "UNI",
+          "XRP",
           "ZEC"
         ],
         "1d": [
