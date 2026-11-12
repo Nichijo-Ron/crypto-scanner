@@ -38,21 +38,20 @@
       },
       "os": {
         "1h": [
-          "ADA",
+          "BNB",
+          "BTC",
+          "ENA",
+          "ETH",
+          "ONDO",
+          "TAO",
+          "UNI"
+        ],
+        "4h": [
           "BNB",
           "BTC",
           "DOGE",
           "ENA",
           "ETH",
-          "LINK",
-          "ONDO",
-          "SOL",
-          "SUI",
-          "TAO",
-          "UNI",
-          "VIRTUAL"
-        ],
-        "4h": [
           "UNI",
           "XRP",
           "ZEC"
