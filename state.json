@@ -6,7 +6,8 @@
         "long": [],
         "short": [
           "HYPE",
-          "SOL"
+          "SOL",
+          "WLFI"
         ]
       },
       "long": [
@@ -27,7 +28,6 @@
         "UNI",
         "VIRTUAL",
         "WLD",
-        "WLFI",
         "XRP",
         "ZEC"
       ]
@@ -39,9 +39,7 @@
         "1d": []
       },
       "os": {
-        "1h": [
-          "UNI"
-        ],
+        "1h": [],
         "4h": [
           "ZEC"
         ],
