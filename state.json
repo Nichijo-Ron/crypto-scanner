@@ -3,15 +3,14 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
-          "WLFI"
-        ],
+        "long": [],
         "short": [
           "SOL"
         ]
       },
       "long": [
-        "AVAX"
+        "AVAX",
+        "WLFI"
       ],
       "short": [
         "ADA",
@@ -41,7 +40,8 @@
       },
       "os": {
         "1h": [
-          "ENA"
+          "ENA",
+          "ONDO"
         ],
         "4h": [
           "UNI",
