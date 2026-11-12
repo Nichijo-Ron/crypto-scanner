@@ -25,7 +25,6 @@
         "UNI",
         "VIRTUAL",
         "WLD",
-        "WLFI",
         "XRP",
         "ZEC"
       ]
@@ -39,9 +38,7 @@
       "os": {
         "1h": [
           "BNB",
-          "BTC",
-          "ENA",
-          "UNI"
+          "BTC"
         ],
         "4h": [
           "BNB",
