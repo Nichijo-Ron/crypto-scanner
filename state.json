@@ -4,9 +4,7 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [],
-        "short": [
-          "WLFI"
-        ]
+        "short": []
       },
       "long": [],
       "short": [
@@ -27,6 +25,7 @@
         "UNI",
         "VIRTUAL",
         "WLD",
+        "WLFI",
         "XRP",
         "ZEC"
       ]
@@ -42,8 +41,6 @@
           "BNB",
           "BTC",
           "ENA",
-          "ETH",
-          "ONDO",
           "UNI"
         ],
         "4h": [
