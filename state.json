@@ -3,10 +3,10 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
+        "long": [],
+        "short": [
           "VIRTUAL"
-        ],
-        "short": []
+        ]
       },
       "long": [],
       "short": [
