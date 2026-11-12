@@ -3,13 +3,14 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
+        "long": [
+          "AVAX"
+        ],
         "short": [
           "SOL"
         ]
       },
       "long": [
-        "AVAX",
         "WLFI"
       ],
       "short": [
