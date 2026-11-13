@@ -3,16 +3,16 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
-          "ADA",
+        "long": [],
+        "short": [
           "VIRTUAL"
-        ],
-        "short": []
+        ]
       },
       "long": [
         "HYPE"
       ],
       "short": [
+        "ADA",
         "AVAX",
         "BNB",
         "BTC",
@@ -40,7 +40,11 @@
       },
       "os": {
         "1h": [
-          "BTC"
+          "BNB",
+          "BTC",
+          "ETH",
+          "SOL",
+          "UNI"
         ],
         "4h": [
           "BNB",
