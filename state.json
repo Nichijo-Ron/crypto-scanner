@@ -5,12 +5,12 @@
       "near": {
         "long": [
           "AVAX",
-          "TAO"
+          "SUI",
+          "TAO",
+          "ZEC"
         ],
         "short": [
-          "SUI",
-          "WLD",
-          "ZEC"
+          "WLD"
         ]
       },
       "long": [
