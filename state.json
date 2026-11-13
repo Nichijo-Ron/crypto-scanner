@@ -38,22 +38,15 @@
       },
       "os": {
         "1h": [
-          "AVAX",
           "BNB",
           "BTC",
           "DOGE",
           "ENA",
           "ETH",
-          "LINK",
           "ONDO",
           "SOL",
-          "SUI",
-          "TAO",
           "TRX",
-          "UNI",
-          "WLD",
-          "XRP",
-          "ZEC"
+          "UNI"
         ],
         "4h": [
           "BNB",
