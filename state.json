@@ -5,14 +5,16 @@
       "near": {
         "long": [
           "AVAX",
-          "HYPE"
+          "TAO"
         ],
         "short": [
           "SUI",
-          "TAO"
+          "WLD",
+          "ZEC"
         ]
       },
       "long": [
+        "HYPE",
         "WLFI"
       ],
       "short": [
@@ -28,9 +30,7 @@
         "TRX",
         "UNI",
         "VIRTUAL",
-        "WLD",
-        "XRP",
-        "ZEC"
+        "XRP"
       ]
     },
     "RSI OB/OS": {
@@ -45,9 +45,7 @@
           "BNB",
           "BTC",
           "ETH",
-          "TRX",
-          "UNI",
-          "ZEC"
+          "UNI"
         ],
         "1d": [
           "BTC",
