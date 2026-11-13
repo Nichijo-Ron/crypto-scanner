@@ -5,27 +5,27 @@
       "near": {
         "long": [
           "AVAX",
+          "DOGE",
           "LINK",
           "SUI",
-          "WLD"
+          "WLD",
+          "WLFI",
+          "ZEC"
         ],
         "short": [
-          "DOGE",
+          "ADA",
           "ENA",
           "ONDO",
           "SOL",
           "TRX",
-          "VIRTUAL",
-          "ZEC"
+          "VIRTUAL"
         ]
       },
       "long": [
         "HYPE",
-        "TAO",
-        "WLFI"
+        "TAO"
       ],
       "short": [
-        "ADA",
         "BNB",
         "BTC",
         "ETH",
@@ -42,11 +42,7 @@
       "os": {
         "1h": [],
         "4h": [
-          "BNB",
-          "BTC",
-          "ETH",
-          "UNI",
-          "ZEC"
+          "BTC"
         ],
         "1d": [
           "BTC",
