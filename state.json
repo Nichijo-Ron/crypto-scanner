@@ -6,7 +6,9 @@
         "long": [],
         "short": [
           "HYPE",
-          "SUI"
+          "SUI",
+          "TAO",
+          "WLFI"
         ]
       },
       "long": [],
@@ -21,12 +23,10 @@
         "LINK",
         "ONDO",
         "SOL",
-        "TAO",
         "TRX",
         "UNI",
         "VIRTUAL",
         "WLD",
-        "WLFI",
         "XRP",
         "ZEC"
       ]
@@ -39,9 +39,6 @@
       },
       "os": {
         "1h": [
-          "BNB",
-          "BTC",
-          "ETH",
           "TRX"
         ],
         "4h": [
