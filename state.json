@@ -4,11 +4,10 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
+          "ADA",
           "VIRTUAL"
         ],
-        "short": [
-          "ADA"
-        ]
+        "short": []
       },
       "long": [
         "HYPE"
