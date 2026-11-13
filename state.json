@@ -7,12 +7,13 @@
           "VIRTUAL"
         ],
         "short": [
-          "HYPE"
+          "ADA"
         ]
       },
-      "long": [],
+      "long": [
+        "HYPE"
+      ],
       "short": [
-        "ADA",
         "AVAX",
         "BNB",
         "BTC",
@@ -40,7 +41,6 @@
       },
       "os": {
         "1h": [
-          "BNB",
           "BTC"
         ],
         "4h": [
@@ -50,6 +50,8 @@
           "ZEC"
         ],
         "1d": [
+          "BTC",
+          "DOGE",
           "ETH",
           "SOL",
           "WLD",
