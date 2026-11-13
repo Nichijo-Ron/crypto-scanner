@@ -5,8 +5,8 @@
       "near": {
         "long": [],
         "short": [
-          "HYPE",
-          "WLFI"
+          "SUI",
+          "WLD"
         ]
       },
       "long": [],
@@ -18,15 +18,15 @@
         "DOGE",
         "ENA",
         "ETH",
+        "HYPE",
         "LINK",
         "ONDO",
         "SOL",
-        "SUI",
         "TAO",
         "TRX",
         "UNI",
         "VIRTUAL",
-        "WLD",
+        "WLFI",
         "XRP",
         "ZEC"
       ]
@@ -47,14 +47,9 @@
         "4h": [
           "BNB",
           "BTC",
-          "DOGE",
-          "ENA",
           "ETH",
-          "SOL",
           "TRX",
           "UNI",
-          "WLD",
-          "XRP",
           "ZEC"
         ],
         "1d": [
