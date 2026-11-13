@@ -11,6 +11,7 @@
           "LINK",
           "ONDO",
           "SOL",
+          "SUI",
           "TRX",
           "WLD",
           "ZEC"
@@ -18,7 +19,6 @@
       },
       "long": [
         "HYPE",
-        "SUI",
         "TAO",
         "WLFI"
       ],
