@@ -4,13 +4,13 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "WLFI"
-        ],
-        "short": [
           "TRX"
-        ]
+        ],
+        "short": []
       },
-      "long": [],
+      "long": [
+        "WLFI"
+      ],
       "short": [
         "ADA",
         "AVAX",
@@ -39,15 +39,7 @@
         "1d": []
       },
       "os": {
-        "1h": [
-          "ADA",
-          "BNB",
-          "BTC",
-          "SOL",
-          "VIRTUAL",
-          "WLD",
-          "XRP"
-        ],
+        "1h": [],
         "4h": [
           "BNB",
           "BTC",
