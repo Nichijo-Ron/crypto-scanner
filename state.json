@@ -5,7 +5,6 @@
       "near": {
         "long": [],
         "short": [
-          "TAO",
           "TRX",
           "ZEC"
         ]
@@ -26,6 +25,7 @@
         "ONDO",
         "SOL",
         "SUI",
+        "TAO",
         "UNI",
         "VIRTUAL",
         "WLD",
@@ -39,9 +39,7 @@
         "1d": []
       },
       "os": {
-        "1h": [
-          "BTC"
-        ],
+        "1h": [],
         "4h": [
           "BNB",
           "BTC",
