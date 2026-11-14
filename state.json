@@ -41,8 +41,10 @@
           "ADA",
           "AVAX",
           "BNB",
+          "BTC",
           "DOGE",
           "ENA",
+          "ETH",
           "HYPE",
           "LINK",
           "ONDO",
@@ -53,7 +55,8 @@
           "UNI",
           "VIRTUAL",
           "WLD",
-          "XRP"
+          "XRP",
+          "ZEC"
         ],
         "4h": [
           "ADA",
