@@ -10,7 +10,6 @@
           "ADA",
           "BNB",
           "BTC",
-          "ENA",
           "ETH",
           "HYPE",
           "LINK",
@@ -25,6 +24,7 @@
       "short": [
         "AVAX",
         "DOGE",
+        "ENA",
         "ONDO",
         "TAO",
         "TRX",
