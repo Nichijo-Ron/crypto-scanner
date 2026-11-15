@@ -45,6 +45,7 @@
           "DOGE",
           "ENA",
           "ETH",
+          "HYPE",
           "LINK",
           "ONDO",
           "SOL",
@@ -52,7 +53,9 @@
           "TAO",
           "TRX",
           "UNI",
-          "VIRTUAL"
+          "VIRTUAL",
+          "WLD",
+          "XRP"
         ],
         "4h": [
           "ADA",
