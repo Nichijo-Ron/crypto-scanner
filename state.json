@@ -45,18 +45,13 @@
           "DOGE",
           "ENA",
           "ETH",
-          "HYPE",
-          "LINK",
           "ONDO",
           "SOL",
           "SUI",
           "TAO",
           "TRX",
-          "UNI",
           "VIRTUAL",
-          "WLD",
-          "XRP",
-          "ZEC"
+          "XRP"
         ],
         "4h": [
           "ADA",
@@ -66,6 +61,7 @@
           "DOGE",
           "ENA",
           "ETH",
+          "HYPE",
           "LINK",
           "ONDO",
           "SOL",
@@ -83,10 +79,19 @@
           "BNB",
           "BTC",
           "DOGE",
+          "ENA",
           "ETH",
+          "HYPE",
+          "LINK",
+          "ONDO",
           "SOL",
+          "SUI",
+          "TAO",
+          "UNI",
+          "VIRTUAL",
           "WLD",
-          "XRP"
+          "XRP",
+          "ZEC"
         ]
       }
     }
