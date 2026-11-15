@@ -4,6 +4,7 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
+          "WLFI",
           "ZEC"
         ],
         "short": [
@@ -16,7 +17,6 @@
           "SOL",
           "SUI",
           "UNI",
-          "WLFI",
           "XRP"
         ]
       },
