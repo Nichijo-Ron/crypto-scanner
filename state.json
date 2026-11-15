@@ -9,7 +9,6 @@
         ],
         "short": [
           "ADA",
-          "AVAX",
           "BNB",
           "BTC",
           "ENA",
@@ -18,18 +17,19 @@
           "SOL",
           "SUI",
           "UNI",
+          "WLFI",
           "XRP"
         ]
       },
       "long": [],
       "short": [
+        "AVAX",
         "DOGE",
         "ONDO",
         "TAO",
         "TRX",
         "VIRTUAL",
-        "WLD",
-        "WLFI"
+        "WLD"
       ]
     },
     "RSI OB/OS": {
