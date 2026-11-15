@@ -3,11 +3,10 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
-          "ZEC"
-        ],
+        "long": [],
         "short": [
-          "XRP"
+          "XRP",
+          "ZEC"
         ]
       },
       "long": [],
@@ -47,6 +46,7 @@
           "BTC",
           "DOGE",
           "ENA",
+          "ETH",
           "ONDO",
           "SOL",
           "TRX",
