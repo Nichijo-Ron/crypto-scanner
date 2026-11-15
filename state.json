@@ -7,8 +7,6 @@
           "ZEC"
         ],
         "short": [
-          "BTC",
-          "ETH",
           "XRP"
         ]
       },
@@ -17,8 +15,10 @@
         "ADA",
         "AVAX",
         "BNB",
+        "BTC",
         "DOGE",
         "ENA",
+        "ETH",
         "HYPE",
         "LINK",
         "ONDO",
