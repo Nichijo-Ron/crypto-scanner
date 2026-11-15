@@ -45,13 +45,14 @@
           "DOGE",
           "ENA",
           "ETH",
+          "LINK",
           "ONDO",
           "SOL",
           "SUI",
           "TAO",
           "TRX",
-          "VIRTUAL",
-          "XRP"
+          "UNI",
+          "VIRTUAL"
         ],
         "4h": [
           "ADA",
