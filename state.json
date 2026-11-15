@@ -17,9 +17,9 @@
           "ETH",
           "SOL",
           "SUI",
+          "TAO",
           "TRX",
-          "UNI",
-          "WLD"
+          "UNI"
         ]
       },
       "long": [
@@ -29,8 +29,8 @@
       "short": [
         "DOGE",
         "ONDO",
-        "TAO",
-        "VIRTUAL"
+        "VIRTUAL",
+        "WLD"
       ]
     },
     "RSI OB/OS": {
