@@ -5,15 +5,12 @@
       "near": {
         "long": [
           "LINK",
-          "SOL",
+          "TAO",
           "TRX",
-          "WLD",
-          "XRP",
           "ZEC"
         ],
         "short": [
-          "SUI",
-          "TAO"
+          "VIRTUAL"
         ]
       },
       "long": [
@@ -24,12 +21,15 @@
         "ETH",
         "HYPE",
         "ONDO",
-        "UNI"
+        "SOL",
+        "SUI",
+        "UNI",
+        "WLD",
+        "XRP"
       ],
       "short": [
         "AVAX",
         "ENA",
-        "VIRTUAL",
         "WLFI"
       ]
     },
