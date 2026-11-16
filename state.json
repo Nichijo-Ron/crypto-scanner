@@ -4,7 +4,14 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
+          "HYPE",
+          "SUI",
+          "WLD",
+          "XRP"
+        ],
+        "short": [
           "ADA",
+          "AVAX",
           "BNB",
           "BTC",
           "DOGE",
@@ -12,23 +19,18 @@
           "LINK",
           "ONDO",
           "SOL",
-          "SUI",
+          "TAO",
           "UNI",
-          "WLD",
-          "XRP"
-        ],
-        "short": [
-          "AVAX",
-          "VIRTUAL"
+          "WLFI"
         ]
       },
       "long": [
-        "HYPE",
-        "WLFI",
         "ZEC"
       ],
       "short": [
-        "TRX"
+        "ENA",
+        "TRX",
+        "VIRTUAL"
       ]
     },
     "RSI OB/OS": {
