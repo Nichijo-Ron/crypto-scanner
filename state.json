@@ -5,13 +5,13 @@
       "near": {
         "long": [
           "LINK",
+          "SUI",
           "TAO",
           "TRX",
+          "WLD",
           "ZEC"
         ],
-        "short": [
-          "VIRTUAL"
-        ]
+        "short": []
       },
       "long": [
         "ADA",
@@ -22,14 +22,13 @@
         "HYPE",
         "ONDO",
         "SOL",
-        "SUI",
         "UNI",
-        "WLD",
         "XRP"
       ],
       "short": [
         "AVAX",
         "ENA",
+        "VIRTUAL",
         "WLFI"
       ]
     },
