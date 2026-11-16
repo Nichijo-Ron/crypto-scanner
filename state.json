@@ -4,6 +4,7 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
+          "HYPE",
           "UNI"
         ],
         "short": [
@@ -12,7 +13,6 @@
           "BTC",
           "DOGE",
           "ETH",
-          "HYPE",
           "LINK",
           "ONDO",
           "SOL",
