@@ -18,7 +18,6 @@
           "ONDO",
           "SOL",
           "SUI",
-          "WLFI",
           "XRP",
           "ZEC"
         ]
@@ -29,7 +28,8 @@
         "ENA",
         "TAO",
         "TRX",
-        "VIRTUAL"
+        "VIRTUAL",
+        "WLFI"
       ]
     },
     "RSI OB/OS": {
