@@ -4,11 +4,10 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "TAO"
+          "AVAX",
+          "TRX"
         ],
         "short": [
-          "AVAX",
-          "TRX",
           "VIRTUAL"
         ]
       },
@@ -23,6 +22,7 @@
         "ONDO",
         "SOL",
         "SUI",
+        "TAO",
         "UNI",
         "WLD",
         "XRP",
