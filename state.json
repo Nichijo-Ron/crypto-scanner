@@ -4,22 +4,22 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
+          "DOGE",
           "HYPE"
         ],
         "short": [
           "ADA",
           "BNB",
-          "DOGE",
           "SUI",
           "TAO",
-          "WLD",
-          "XRP"
+          "WLD"
         ]
       },
       "long": [
         "SOL",
         "TRX",
         "UNI",
+        "XRP",
         "ZEC"
       ],
       "short": [
@@ -41,9 +41,7 @@
       },
       "os": {
         "1h": [],
-        "4h": [
-          "VIRTUAL"
-        ],
+        "4h": [],
         "1d": [
           "ADA",
           "BNB",
