@@ -5,8 +5,6 @@
       "near": {
         "long": [
           "HYPE",
-          "SOL",
-          "TAO",
           "XRP"
         ],
         "short": [
@@ -15,10 +13,12 @@
           "DOGE",
           "LINK",
           "SUI",
+          "TAO",
           "WLD"
         ]
       },
       "long": [
+        "SOL",
         "TRX",
         "UNI",
         "ZEC"
