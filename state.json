@@ -4,7 +4,8 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "AVAX"
+          "AVAX",
+          "ETH"
         ],
         "short": [
           "ENA"
@@ -15,7 +16,6 @@
         "BNB",
         "BTC",
         "DOGE",
-        "ETH",
         "HYPE",
         "LINK",
         "ONDO",
