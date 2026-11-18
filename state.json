@@ -5,10 +5,10 @@
       "near": {
         "long": [
           "LINK",
+          "UNI",
           "VIRTUAL"
         ],
         "short": [
-          "AVAX",
           "BTC",
           "WLD",
           "WLFI"
@@ -28,6 +28,7 @@
         "ZEC"
       ],
       "short": [
+        "AVAX",
         "ENA",
         "ETH"
       ]
