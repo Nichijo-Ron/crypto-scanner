@@ -4,21 +4,20 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
+          "HYPE",
           "LINK",
-          "UNI",
-          "VIRTUAL"
+          "ONDO"
         ],
         "short": [
+          "ADA",
+          "VIRTUAL",
           "WLD",
           "WLFI"
         ]
       },
       "long": [
-        "ADA",
         "BNB",
         "DOGE",
-        "HYPE",
-        "ONDO",
         "SOL",
         "SUI",
         "TAO",
