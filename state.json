@@ -5,12 +5,13 @@
       "near": {
         "long": [
           "AVAX",
-          "ENA",
+          "BTC",
           "ETH",
           "LINK"
         ],
         "short": [
-          "BTC"
+          "ENA",
+          "WLFI"
         ]
       },
       "long": [
@@ -29,9 +30,7 @@
         "XRP",
         "ZEC"
       ],
-      "short": [
-        "WLFI"
-      ]
+      "short": []
     },
     "RSI OB/OS": {
       "ob": {
