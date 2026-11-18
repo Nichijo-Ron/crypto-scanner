@@ -3,13 +3,12 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
-          "DOGE",
-          "SOL",
-          "XRP"
-        ],
+        "long": [],
         "short": [
           "ADA",
+          "DOGE",
+          "SOL",
+          "XRP",
           "ZEC"
         ]
       },
@@ -41,9 +40,7 @@
       },
       "os": {
         "1h": [],
-        "4h": [
-          "ENA"
-        ],
+        "4h": [],
         "1d": [
           "ADA",
           "BNB",
