@@ -6,7 +6,7 @@
         "long": [
           "ADA",
           "HYPE",
-          "UNI",
+          "SUI",
           "WLFI"
         ],
         "short": [
@@ -19,7 +19,6 @@
         "DOGE",
         "ONDO",
         "SOL",
-        "SUI",
         "TAO",
         "TRX",
         "VIRTUAL",
@@ -35,7 +34,9 @@
     },
     "RSI OB/OS": {
       "ob": {
-        "1h": [],
+        "1h": [
+          "TRX"
+        ],
         "4h": [],
         "1d": []
       },
