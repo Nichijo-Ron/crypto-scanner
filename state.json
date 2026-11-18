@@ -4,17 +4,17 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
+          "LINK",
+          "UNI",
           "VIRTUAL"
         ],
         "short": [
-          "ADA",
-          "AVAX",
-          "LINK",
           "WLD",
           "WLFI"
         ]
       },
       "long": [
+        "ADA",
         "BNB",
         "DOGE",
         "HYPE",
@@ -27,6 +27,7 @@
         "ZEC"
       ],
       "short": [
+        "AVAX",
         "BTC",
         "ENA",
         "ETH"
