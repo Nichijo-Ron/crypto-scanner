@@ -4,13 +4,13 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "XRP",
-          "ZEC"
+          "DOGE",
+          "SOL",
+          "XRP"
         ],
         "short": [
           "ADA",
-          "DOGE",
-          "SOL"
+          "ZEC"
         ]
       },
       "long": [
