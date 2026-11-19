@@ -16,12 +16,12 @@
           "XRP"
         ],
         "short": [
-          "AVAX",
-          "ONDO"
+          "AVAX"
         ]
       },
       "long": [
         "BNB",
+        "ONDO",
         "SOL",
         "TAO",
         "TRX",
@@ -29,8 +29,7 @@
       ],
       "short": [
         "ENA",
-        "UNI",
-        "VIRTUAL"
+        "UNI"
       ]
     },
     "RSI OB/OS": {
