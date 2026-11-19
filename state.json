@@ -8,20 +8,20 @@
           "TRX"
         ],
         "short": [
-          "BNB",
-          "BTC",
+          "ADA",
+          "HYPE",
           "SOL",
           "WLD",
           "XRP"
         ]
       },
       "long": [
-        "ADA",
-        "HYPE",
         "WLFI"
       ],
       "short": [
         "AVAX",
+        "BNB",
+        "BTC",
         "DOGE",
         "ENA",
         "ETH",
