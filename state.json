@@ -8,19 +8,17 @@
           "BNB",
           "DOGE",
           "ETH",
+          "LINK",
           "SUI",
+          "WLFI",
           "XRP",
           "ZEC"
         ],
         "short": [
-          "BTC",
+          "AVAX",
           "HYPE",
-          "LINK",
-          "ONDO",
           "UNI",
-          "VIRTUAL",
-          "WLD",
-          "WLFI"
+          "WLD"
         ]
       },
       "long": [
@@ -29,8 +27,8 @@
         "TRX"
       ],
       "short": [
-        "AVAX",
-        "ENA"
+        "ENA",
+        "VIRTUAL"
       ]
     },
     "RSI OB/OS": {
