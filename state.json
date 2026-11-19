@@ -8,12 +8,13 @@
           "DOGE",
           "SUI"
         ],
-        "short": []
+        "short": [
+          "BTC"
+        ]
       },
       "long": [
         "ADA",
         "BNB",
-        "BTC",
         "ETH",
         "HYPE",
         "LINK",
