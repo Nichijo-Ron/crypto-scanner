@@ -5,19 +5,19 @@
       "near": {
         "long": [
           "ADA",
+          "BTC",
           "DOGE",
           "ETH",
           "HYPE",
           "LINK",
           "SUI",
           "WLD",
+          "WLFI",
           "XRP"
         ],
         "short": [
           "AVAX",
-          "ONDO",
-          "UNI",
-          "WLFI"
+          "UNI"
         ]
       },
       "long": [
@@ -34,9 +34,7 @@
     },
     "RSI OB/OS": {
       "ob": {
-        "1h": [
-          "TRX"
-        ],
+        "1h": [],
         "4h": [],
         "1d": []
       },
