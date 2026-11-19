@@ -5,8 +5,6 @@
       "near": {
         "long": [],
         "short": [
-          "ADA",
-          "HYPE",
           "TRX"
         ]
       },
@@ -14,12 +12,14 @@
         "WLFI"
       ],
       "short": [
+        "ADA",
         "AVAX",
         "BNB",
         "BTC",
         "DOGE",
         "ENA",
         "ETH",
+        "HYPE",
         "LINK",
         "ONDO",
         "SOL",
@@ -39,7 +39,11 @@
         "1d": []
       },
       "os": {
-        "1h": [],
+        "1h": [
+          "BTC",
+          "ENA",
+          "ZEC"
+        ],
         "4h": [
           "ENA"
         ],
