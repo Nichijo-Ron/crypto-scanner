@@ -3,12 +3,13 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
+        "long": [
+          "HYPE"
+        ],
         "short": [
           "ADA",
           "BNB",
           "BTC",
-          "HYPE",
           "SOL",
           "TAO",
           "TRX",
