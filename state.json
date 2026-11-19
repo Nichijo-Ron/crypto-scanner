@@ -6,18 +6,17 @@
         "long": [
           "SOL",
           "TAO",
-          "XRP"
+          "WLFI",
+          "ZEC"
         ],
         "short": [
           "ADA",
           "BNB",
           "DOGE",
           "ETH",
-          "LINK",
+          "HYPE",
           "SUI",
-          "WLD",
-          "WLFI",
-          "ZEC"
+          "XRP"
         ]
       },
       "long": [
@@ -27,15 +26,18 @@
         "AVAX",
         "BTC",
         "ENA",
-        "HYPE",
+        "LINK",
         "ONDO",
         "UNI",
-        "VIRTUAL"
+        "VIRTUAL",
+        "WLD"
       ]
     },
     "RSI OB/OS": {
       "ob": {
-        "1h": [],
+        "1h": [
+          "TRX"
+        ],
         "4h": [],
         "1d": []
       },
