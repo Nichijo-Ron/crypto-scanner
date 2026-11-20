@@ -5,7 +5,8 @@
       "near": {
         "long": [],
         "short": [
-          "WLFI"
+          "WLFI",
+          "XRP"
         ]
       },
       "long": [],
@@ -27,7 +28,6 @@
         "UNI",
         "VIRTUAL",
         "WLD",
-        "XRP",
         "ZEC"
       ]
     },
