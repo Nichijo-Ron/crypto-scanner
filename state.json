@@ -8,9 +8,7 @@
           "TRX"
         ]
       },
-      "long": [
-        "WLFI"
-      ],
+      "long": [],
       "short": [
         "ADA",
         "AVAX",
@@ -40,7 +38,10 @@
       },
       "os": {
         "1h": [
-          "ENA"
+          "ENA",
+          "UNI",
+          "WLD",
+          "ZEC"
         ],
         "4h": [
           "ENA"
