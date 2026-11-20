@@ -47,6 +47,7 @@
           "ETH",
           "HYPE",
           "LINK",
+          "SOL",
           "SUI",
           "TRX",
           "UNI",
@@ -69,10 +70,12 @@
           "ONDO",
           "SOL",
           "SUI",
-          "TAO",
+          "TRX",
           "UNI",
           "VIRTUAL",
           "WLD",
+          "WLFI",
+          "XRP",
           "ZEC"
         ],
         "1d": [
