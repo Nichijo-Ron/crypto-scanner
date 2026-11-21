@@ -11,23 +11,23 @@
           "DOGE",
           "ETH",
           "LINK",
+          "ONDO",
           "SOL",
           "TRX",
-          "UNI",
           "XRP",
           "ZEC"
         ],
         "short": [
           "ENA",
           "HYPE",
-          "ONDO",
           "SUI",
           "VIRTUAL",
           "WLD"
         ]
       },
       "long": [
-        "TAO"
+        "TAO",
+        "UNI"
       ],
       "short": [
         "WLFI"
