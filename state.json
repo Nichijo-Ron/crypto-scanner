@@ -5,8 +5,8 @@
       "near": {
         "long": [
           "ADA",
-          "AVAX",
           "BNB",
+          "BTC",
           "DOGE",
           "ENA",
           "ETH",
@@ -19,13 +19,13 @@
           "ZEC"
         ],
         "short": [
+          "AVAX",
           "SUI",
           "VIRTUAL",
           "WLD"
         ]
       },
       "long": [
-        "BTC",
         "TAO",
         "UNI"
       ],
