@@ -9,25 +9,26 @@
           "BNB",
           "BTC",
           "DOGE",
+          "ENA",
           "ETH",
           "LINK",
           "ONDO",
           "SOL",
-          "TAO",
           "TRX",
           "UNI",
           "XRP",
           "ZEC"
         ],
         "short": [
-          "ENA",
           "HYPE",
           "SUI",
           "VIRTUAL",
           "WLD"
         ]
       },
-      "long": [],
+      "long": [
+        "TAO"
+      ],
       "short": [
         "WLFI"
       ]
