@@ -41,9 +41,23 @@
           "BNB",
           "ETH",
           "TRX",
-          "ZEC"
+          "WLFI"
         ],
         "4h": [
+          "AVAX",
+          "BNB",
+          "BTC",
+          "ENA",
+          "ETH",
+          "HYPE",
+          "SUI",
+          "UNI",
+          "VIRTUAL",
+          "WLD",
+          "WLFI",
+          "ZEC"
+        ],
+        "1d": [
           "ADA",
           "AVAX",
           "BNB",
@@ -56,25 +70,12 @@
           "ONDO",
           "SOL",
           "SUI",
-          "TRX",
           "UNI",
           "VIRTUAL",
           "WLD",
           "WLFI",
           "XRP",
           "ZEC"
-        ],
-        "1d": [
-          "ADA",
-          "BNB",
-          "BTC",
-          "DOGE",
-          "ENA",
-          "ETH",
-          "SOL",
-          "VIRTUAL",
-          "WLD",
-          "XRP"
         ]
       }
     }
