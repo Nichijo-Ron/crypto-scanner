@@ -5,30 +5,30 @@
       "near": {
         "long": [],
         "short": [
+          "AVAX",
+          "BNB",
+          "BTC",
           "ETH",
-          "TRX"
+          "LINK",
+          "SOL",
+          "TAO",
+          "TRX",
+          "UNI",
+          "ZEC"
         ]
       },
       "long": [],
       "short": [
         "ADA",
-        "AVAX",
-        "BNB",
-        "BTC",
         "DOGE",
         "ENA",
         "HYPE",
-        "LINK",
         "ONDO",
-        "SOL",
         "SUI",
-        "TAO",
-        "UNI",
         "VIRTUAL",
         "WLD",
         "WLFI",
-        "XRP",
-        "ZEC"
+        "XRP"
       ]
     },
     "RSI OB/OS": {
@@ -40,19 +40,10 @@
       "os": {
         "1h": [],
         "4h": [
-          "AVAX",
           "BNB",
-          "BTC",
-          "DOGE",
-          "ENA",
-          "HYPE",
-          "ONDO",
           "SUI",
-          "UNI",
           "VIRTUAL",
-          "WLD",
-          "WLFI",
-          "ZEC"
+          "WLD"
         ],
         "1d": [
           "ADA",
