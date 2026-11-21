@@ -7,7 +7,6 @@
           "ADA",
           "AVAX",
           "BNB",
-          "BTC",
           "DOGE",
           "ENA",
           "ETH",
@@ -26,6 +25,7 @@
         ]
       },
       "long": [
+        "BTC",
         "TAO",
         "UNI"
       ],
