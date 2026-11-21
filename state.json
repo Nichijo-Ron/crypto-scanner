@@ -9,6 +9,7 @@
           "BNB",
           "BTC",
           "DOGE",
+          "ENA",
           "ETH",
           "HYPE",
           "LINK",
@@ -19,7 +20,6 @@
           "ZEC"
         ],
         "short": [
-          "ENA",
           "SUI",
           "VIRTUAL",
           "WLD"
