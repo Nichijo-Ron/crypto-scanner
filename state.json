@@ -10,6 +10,7 @@
           "BTC",
           "DOGE",
           "ETH",
+          "HYPE",
           "LINK",
           "ONDO",
           "SOL",
@@ -19,7 +20,6 @@
         ],
         "short": [
           "ENA",
-          "HYPE",
           "SUI",
           "VIRTUAL",
           "WLD"
