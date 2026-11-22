@@ -15,19 +15,19 @@
           "LINK",
           "ONDO",
           "SOL",
+          "SUI",
           "TRX",
-          "XRP",
+          "WLD",
           "ZEC"
         ],
         "short": [
-          "SUI",
-          "VIRTUAL",
-          "WLD"
+          "VIRTUAL"
         ]
       },
       "long": [
         "TAO",
-        "UNI"
+        "UNI",
+        "XRP"
       ],
       "short": [
         "WLFI"
