@@ -15,12 +15,12 @@
           "LINK",
           "ONDO",
           "SOL",
-          "SUI",
           "TRX",
           "XRP",
           "ZEC"
         ],
         "short": [
+          "SUI",
           "VIRTUAL",
           "WLD"
         ]
