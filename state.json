@@ -5,6 +5,8 @@
       "near": {
         "long": [
           "ENA",
+          "ETH",
+          "LINK",
           "UNI",
           "ZEC"
         ],
@@ -14,9 +16,7 @@
           "BNB",
           "BTC",
           "DOGE",
-          "ETH",
           "HYPE",
-          "LINK",
           "ONDO",
           "SOL",
           "SUI",
