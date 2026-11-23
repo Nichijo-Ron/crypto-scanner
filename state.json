@@ -9,7 +9,8 @@
           "ENA",
           "ETH",
           "SOL",
-          "VIRTUAL"
+          "VIRTUAL",
+          "XRP"
         ],
         "short": []
       },
@@ -25,7 +26,6 @@
         "TRX",
         "UNI",
         "WLD",
-        "XRP",
         "ZEC"
       ],
       "short": [
@@ -41,7 +41,9 @@
         "1d": []
       },
       "os": {
-        "1h": [],
+        "1h": [
+          "WLFI"
+        ],
         "4h": [],
         "1d": [
           "ADA",
