@@ -35,17 +35,9 @@
       "ob": {
         "1h": [
           "ADA",
-          "AVAX",
           "DOGE",
-          "HYPE",
           "LINK",
-          "ONDO",
-          "SOL",
-          "SUI",
-          "TRX",
-          "UNI",
-          "XRP",
-          "ZEC"
+          "TRX"
         ],
         "4h": [],
         "1d": []
