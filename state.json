@@ -5,28 +5,27 @@
       "near": {
         "long": [
           "LINK",
-          "WLD"
+          "TRX"
         ],
         "short": [
           "ADA",
           "AVAX",
           "DOGE",
           "HYPE",
-          "ONDO",
-          "SUI",
           "UNI",
+          "WLD",
           "XRP"
         ]
       },
-      "long": [
-        "TRX"
-      ],
+      "long": [],
       "short": [
         "BNB",
         "BTC",
         "ENA",
         "ETH",
+        "ONDO",
         "SOL",
+        "SUI",
         "TAO",
         "VIRTUAL",
         "WLFI",
