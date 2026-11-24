@@ -3,32 +3,31 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
-          "LINK",
-          "TRX"
-        ],
+        "long": [],
         "short": [
           "ADA",
-          "AVAX",
-          "DOGE",
-          "HYPE",
+          "LINK",
+          "TRX",
           "UNI",
-          "WLD",
-          "XRP"
+          "WLD"
         ]
       },
       "long": [],
       "short": [
+        "AVAX",
         "BNB",
         "BTC",
+        "DOGE",
         "ENA",
         "ETH",
+        "HYPE",
         "ONDO",
         "SOL",
         "SUI",
         "TAO",
         "VIRTUAL",
         "WLFI",
+        "XRP",
         "ZEC"
       ]
     },
