@@ -8,6 +8,7 @@
           "AVAX",
           "DOGE",
           "LINK",
+          "SUI",
           "TRX",
           "UNI",
           "WLD",
@@ -16,8 +17,7 @@
         "short": [
           "HYPE",
           "ONDO",
-          "SOL",
-          "SUI"
+          "SOL"
         ]
       },
       "long": [],
