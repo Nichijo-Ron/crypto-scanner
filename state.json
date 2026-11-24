@@ -8,18 +8,18 @@
           "AVAX",
           "DOGE",
           "HYPE",
-          "LINK"
+          "LINK",
+          "ONDO",
+          "SOL",
+          "SUI",
+          "UNI",
+          "WLD"
         ],
         "short": [
           "BNB",
           "BTC",
           "ETH",
-          "ONDO",
-          "SOL",
-          "SUI",
           "TAO",
-          "UNI",
-          "WLD",
           "XRP"
         ]
       },
@@ -47,19 +47,14 @@
           "WLFI"
         ],
         "1d": [
-          "ADA",
           "BNB",
           "BTC",
           "DOGE",
           "ENA",
           "ETH",
-          "ONDO",
-          "SOL",
-          "SUI",
           "VIRTUAL",
           "WLD",
-          "WLFI",
-          "XRP"
+          "WLFI"
         ]
       }
     }
