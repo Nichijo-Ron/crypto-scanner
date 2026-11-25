@@ -39,17 +39,9 @@
       },
       "os": {
         "1h": [
-          "ADA",
-          "AVAX",
-          "DOGE",
           "ENA",
-          "HYPE",
-          "ONDO",
-          "SUI",
-          "TAO",
+          "TRX",
           "UNI",
-          "VIRTUAL",
-          "WLD",
           "ZEC"
         ],
         "4h": [],
