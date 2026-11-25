@@ -6,9 +6,7 @@
         "long": [
           "WLFI"
         ],
-        "short": [
-          "TRX"
-        ]
+        "short": []
       },
       "long": [],
       "short": [
@@ -25,6 +23,7 @@
         "SOL",
         "SUI",
         "TAO",
+        "TRX",
         "UNI",
         "VIRTUAL",
         "WLD",
@@ -40,7 +39,9 @@
       },
       "os": {
         "1h": [
-          "TAO"
+          "HYPE",
+          "TAO",
+          "UNI"
         ],
         "4h": [],
         "1d": [
