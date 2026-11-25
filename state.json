@@ -3,10 +3,11 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
-        "short": [
-          "TRX",
+        "long": [
           "WLFI"
+        ],
+        "short": [
+          "TRX"
         ]
       },
       "long": [],
@@ -39,7 +40,6 @@
       },
       "os": {
         "1h": [
-          "HYPE",
           "TAO"
         ],
         "4h": [],
