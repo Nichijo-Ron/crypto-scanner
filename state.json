@@ -3,9 +3,7 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
-          "VIRTUAL"
-        ],
+        "long": [],
         "short": []
       },
       "long": [
@@ -23,6 +21,7 @@
         "SUI",
         "TAO",
         "UNI",
+        "VIRTUAL",
         "WLD",
         "WLFI",
         "XRP",
@@ -35,8 +34,7 @@
     "RSI OB/OS": {
       "ob": {
         "1h": [
-          "ENA",
-          "SUI"
+          "ENA"
         ],
         "4h": [],
         "1d": []
