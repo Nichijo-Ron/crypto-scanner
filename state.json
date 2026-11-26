@@ -4,7 +4,6 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "TAO",
           "VIRTUAL"
         ],
         "short": []
@@ -22,6 +21,7 @@
         "ONDO",
         "SOL",
         "SUI",
+        "TAO",
         "UNI",
         "WLD",
         "WLFI",
@@ -35,7 +35,8 @@
     "RSI OB/OS": {
       "ob": {
         "1h": [
-          "WLFI"
+          "ENA",
+          "SUI"
         ],
         "4h": [],
         "1d": []
