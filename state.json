@@ -3,7 +3,9 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
+        "long": [
+          "ZEC"
+        ],
         "short": []
       },
       "long": [
@@ -24,8 +26,7 @@
         "VIRTUAL",
         "WLD",
         "WLFI",
-        "XRP",
-        "ZEC"
+        "XRP"
       ],
       "short": [
         "TRX"
