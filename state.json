@@ -3,9 +3,7 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
-          "UNI"
-        ],
+        "long": [],
         "short": []
       },
       "long": [
@@ -22,6 +20,7 @@
         "SOL",
         "SUI",
         "TAO",
+        "UNI",
         "VIRTUAL",
         "WLD",
         "WLFI",
