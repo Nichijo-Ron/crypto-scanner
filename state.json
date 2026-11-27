@@ -3,7 +3,9 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [],
+        "long": [
+          "WLFI"
+        ],
         "short": []
       },
       "long": [
@@ -23,7 +25,6 @@
         "UNI",
         "VIRTUAL",
         "WLD",
-        "WLFI",
         "XRP"
       ],
       "short": [
