@@ -7,18 +7,18 @@
           "DOGE",
           "ENA",
           "HYPE",
+          "LINK",
           "SOL",
-          "VIRTUAL"
+          "SUI",
+          "TAO",
+          "UNI",
+          "VIRTUAL",
+          "WLD"
         ],
         "short": [
           "ADA",
           "AVAX",
-          "LINK",
           "ONDO",
-          "SUI",
-          "TAO",
-          "UNI",
-          "WLD",
           "XRP"
         ]
       },
@@ -41,6 +41,7 @@
       },
       "os": {
         "1h": [
+          "TRX",
           "WLFI"
         ],
         "4h": [
