@@ -9,7 +9,6 @@
           "HYPE",
           "LINK",
           "SOL",
-          "SUI",
           "TAO",
           "UNI",
           "VIRTUAL",
@@ -19,6 +18,7 @@
           "ADA",
           "AVAX",
           "ONDO",
+          "SUI",
           "XRP"
         ]
       },
@@ -41,7 +41,6 @@
       },
       "os": {
         "1h": [
-          "TRX",
           "WLFI"
         ],
         "4h": [
