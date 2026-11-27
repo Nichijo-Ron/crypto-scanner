@@ -4,7 +4,6 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [
-          "TRX",
           "WLFI"
         ],
         "short": []
@@ -23,6 +22,7 @@
         "SOL",
         "SUI",
         "TAO",
+        "TRX",
         "UNI",
         "VIRTUAL",
         "WLD",
@@ -34,11 +34,18 @@
     "RSI OB/OS": {
       "ob": {
         "1h": [
+          "ADA",
           "BNB",
+          "BTC",
+          "DOGE",
+          "ETH",
           "HYPE",
           "LINK",
+          "ONDO",
           "SOL",
-          "VIRTUAL"
+          "SUI",
+          "VIRTUAL",
+          "WLD"
         ],
         "4h": [],
         "1d": []
