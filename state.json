@@ -7,26 +7,26 @@
           "DOGE",
           "ENA",
           "HYPE",
-          "SOL",
           "TAO",
           "UNI",
-          "ZEC"
+          "WLD"
         ],
         "short": [
-          "ADA",
           "LINK",
-          "ONDO",
+          "SOL",
           "SUI",
           "VIRTUAL",
-          "WLD"
+          "ZEC"
         ]
       },
       "long": [],
       "short": [
+        "ADA",
         "AVAX",
         "BNB",
         "BTC",
         "ETH",
+        "ONDO",
         "TRX",
         "WLFI",
         "XRP"
