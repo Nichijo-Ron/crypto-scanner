@@ -27,23 +27,25 @@
         "XRP",
         "ZEC"
       ],
-      "short": []
+      "short": [
+        "WLFI"
+      ]
     },
     "RSI OB/OS": {
       "ob": {
         "1h": [
           "ADA",
-          "BNB",
-          "BTC",
           "DOGE",
           "ENA",
-          "HYPE",
           "ONDO",
           "SOL",
+          "UNI",
           "WLD",
           "XRP"
         ],
-        "4h": [],
+        "4h": [
+          "LINK"
+        ],
         "1d": []
       },
       "os": {
