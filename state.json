@@ -3,9 +3,7 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
-          "TRX"
-        ],
+        "long": [],
         "short": []
       },
       "long": [
@@ -22,6 +20,7 @@
         "SOL",
         "SUI",
         "TAO",
+        "TRX",
         "UNI",
         "VIRTUAL",
         "WLD",
@@ -36,16 +35,16 @@
       "ob": {
         "1h": [
           "DOGE",
-          "ENA",
           "TAO",
-          "UNI",
           "VIRTUAL"
         ],
         "4h": [],
         "1d": []
       },
       "os": {
-        "1h": [],
+        "1h": [
+          "WLFI"
+        ],
         "4h": [],
         "1d": [
           "BNB",
