@@ -3,12 +3,12 @@
   "scans": {
     "เหรียญหลัก 1h": {
       "near": {
-        "long": [
+        "long": [],
+        "short": [
           "HYPE",
           "TAO",
           "ZEC"
-        ],
-        "short": []
+        ]
       },
       "long": [],
       "short": [
