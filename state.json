@@ -6,16 +6,16 @@
         "long": [
           "DOGE",
           "ENA",
-          "HYPE",
           "TAO",
           "UNI",
+          "VIRTUAL",
           "WLD"
         ],
         "short": [
+          "HYPE",
           "LINK",
           "SOL",
           "SUI",
-          "VIRTUAL",
           "ZEC"
         ]
       },
@@ -48,10 +48,9 @@
         "1d": [
           "BNB",
           "BTC",
-          "ENA",
           "ETH",
           "VIRTUAL",
-          "ZEC"
+          "WLFI"
         ]
       }
     }
