@@ -4,9 +4,7 @@
     "เหรียญหลัก 1h": {
       "near": {
         "long": [],
-        "short": [
-          "ZEC"
-        ]
+        "short": []
       },
       "long": [],
       "short": [
@@ -28,7 +26,8 @@
         "VIRTUAL",
         "WLD",
         "WLFI",
-        "XRP"
+        "XRP",
+        "ZEC"
       ]
     },
     "RSI OB/OS": {
@@ -39,6 +38,7 @@
       },
       "os": {
         "1h": [
+          "VIRTUAL",
           "WLFI"
         ],
         "4h": [
