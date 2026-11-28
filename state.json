@@ -6,17 +6,17 @@
         "long": [
           "DOGE",
           "ENA",
-          "TAO",
-          "UNI",
-          "VIRTUAL",
-          "WLD"
-        ],
-        "short": [
           "HYPE",
           "LINK",
+          "TAO",
+          "UNI",
+          "ZEC"
+        ],
+        "short": [
           "SOL",
           "SUI",
-          "ZEC"
+          "VIRTUAL",
+          "WLD"
         ]
       },
       "long": [],
