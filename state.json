@@ -8,25 +8,26 @@
           "ENA",
           "HYPE",
           "LINK",
-          "TAO",
-          "UNI",
-          "ZEC"
-        ],
-        "short": [
           "SOL",
           "SUI",
+          "TAO",
+          "UNI",
           "VIRTUAL",
           "WLD"
+        ],
+        "short": [
+          "ONDO"
         ]
       },
-      "long": [],
+      "long": [
+        "ZEC"
+      ],
       "short": [
         "ADA",
         "AVAX",
         "BNB",
         "BTC",
         "ETH",
-        "ONDO",
         "TRX",
         "WLFI",
         "XRP"
