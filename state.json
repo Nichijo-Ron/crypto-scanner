@@ -10,12 +10,9 @@
         ],
         "short": [
           "ENA",
-          "LINK",
           "SOL",
-          "SUI",
           "UNI",
-          "VIRTUAL",
-          "WLD"
+          "VIRTUAL"
         ]
       },
       "long": [
@@ -27,8 +24,11 @@
         "BNB",
         "BTC",
         "ETH",
+        "LINK",
         "ONDO",
+        "SUI",
         "TRX",
+        "WLD",
         "WLFI",
         "XRP"
       ]
