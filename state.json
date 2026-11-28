@@ -5,8 +5,7 @@
       "near": {
         "long": [],
         "short": [
-          "HYPE",
-          "TAO"
+          "HYPE"
         ]
       },
       "long": [
@@ -24,6 +23,7 @@
         "ONDO",
         "SOL",
         "SUI",
+        "TAO",
         "TRX",
         "UNI",
         "VIRTUAL",
@@ -40,7 +40,6 @@
       },
       "os": {
         "1h": [
-          "TRX",
           "WLFI"
         ],
         "4h": [
